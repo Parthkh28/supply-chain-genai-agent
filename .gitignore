@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.key
+kaggle.json
+
+# Logs
+*.log
+
+# Local caches
+.cache/
+.huggingface/
+sentence_transformers/
+
+# FAISS indexes can be rebuilt locally
+supply_chain_agent_training_outputs/knowledge_base/faiss_index/
+
+
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+pandas
+numpy
+joblib
+scikit-learn
+xgboost
+pydantic>=2,<3
+
+langchain
+langchain-community
+langgraph
+faiss-cpu
+
+langchain-groq
+langchain-huggingface
+sentence-transformers

@@ -1,0 +1,175 @@
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Geopolitical Conflict (Route Diversion)
+Mitigation Action    : Expedited Air Freight
+Historical On-Time   : 0.0%
+Avg Delay (days)     : 13.2
+Avg Shipping Cost    : $63,778
+Sample Size          : 153 orders
+
+---
+
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Geopolitical Conflict (Route Diversion)
+Mitigation Action    : Re-routing
+Historical On-Time   : 0.0%
+Avg Delay (days)     : 12.8
+Avg Shipping Cost    : $6,078
+Sample Size          : 368 orders
+
+---
+
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Port Congestion
+Mitigation Action    : Expedited Air Freight
+Historical On-Time   : 10.7%
+Avg Delay (days)     : 2.9
+Avg Shipping Cost    : $47,937
+Sample Size          : 150 orders
+
+---
+
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Port Congestion
+Mitigation Action    : Standard Shipping
+Historical On-Time   : 7.8%
+Avg Delay (days)     : 3.0
+Avg Shipping Cost    : $4,039
+Sample Size          : 423 orders
+
+---
+
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Severe Weather (Typhoon/Storm)
+Mitigation Action    : Expedited Air Freight
+Historical On-Time   : 0.0%
+Avg Delay (days)     : 5.6
+Avg Shipping Cost    : $34,647
+Sample Size          : 46 orders
+
+---
+
+MITIGATION PLAYBOOK RECORD
+Disruption Type      : Severe Weather (Typhoon/Storm)
+Mitigation Action    : Standard Shipping
+Historical On-Time   : 0.0%
+Avg Delay (days)     : 5.5
+Avg Shipping Cost    : $4,519
+Sample Size          : 127 orders
+
+---
+
+ROUTE RISK PROFILE
+Route                : Atlantic
+Avg Geopolitical Risk: 0.494
+Avg Weather Severity : 4.88
+Disruption Rate      : 11.0%
+Avg Delay (days)     : 0.3
+Avg Shipping Cost    : $11,400
+Total Orders         : 1701
+
+---
+
+ROUTE RISK PROFILE
+Route                : Commodity
+Avg Geopolitical Risk: 0.499
+Avg Weather Severity : 4.97
+Disruption Rate      : 9.2%
+Avg Delay (days)     : 0.3
+Avg Shipping Cost    : $10,955
+Total Orders         : 1608
+
+---
+
+ROUTE RISK PROFILE
+Route                : Intra-Asia
+Avg Geopolitical Risk: 0.499
+Avg Weather Severity : 4.96
+Disruption Rate      : 13.6%
+Avg Delay (days)     : 0.5
+Avg Shipping Cost    : $11,140
+Total Orders         : 1634
+
+---
+
+ROUTE RISK PROFILE
+Route                : Pacific
+Avg Geopolitical Risk: 0.505
+Avg Weather Severity : 5.07
+Disruption Rate      : 11.5%
+Avg Delay (days)     : 0.5
+Avg Shipping Cost    : $10,380
+Total Orders         : 1645
+
+---
+
+ROUTE RISK PROFILE
+Route                : Suez
+Avg Geopolitical Risk: 0.492
+Avg Weather Severity : 4.99
+Disruption Rate      : 15.3%
+Avg Delay (days)     : 2.0
+Avg Shipping Cost    : $12,337
+Total Orders         : 3412
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Auto Parts
+Criticality Score    : 0.50
+Disruption Rate      : 13.2%
+Avg Delay (days)     : 1.0
+Avg Shipping Cost    : $3,855
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Consumer Electronics
+Criticality Score    : 0.55
+Disruption Rate      : 12.0%
+Avg Delay (days)     : 0.9
+Avg Shipping Cost    : $3,877
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Perishable Foods
+Criticality Score    : 0.95
+Disruption Rate      : 12.4%
+Avg Delay (days)     : 0.9
+Avg Shipping Cost    : $4,030
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Pharmaceuticals
+Criticality Score    : 1.00
+Disruption Rate      : 11.0%
+Avg Delay (days)     : 0.9
+Avg Shipping Cost    : $30,083
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Raw Materials
+Criticality Score    : 0.25
+Disruption Rate      : 12.7%
+Avg Delay (days)     : 1.0
+Avg Shipping Cost    : $3,853
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Semiconductors
+Criticality Score    : 0.70
+Disruption Rate      : 13.1%
+Avg Delay (days)     : 1.0
+Avg Shipping Cost    : $29,923
+
+---
+
+PRODUCT RISK PROFILE
+Product Category     : Textiles
+Criticality Score    : 0.15
+Disruption Rate      : 14.2%
+Avg Delay (days)     : 1.0
+Avg Shipping Cost    : $3,920

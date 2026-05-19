@@ -1,0 +1,39 @@
+{
+  "created_at_utc": "2026-05-16T19:53:13.833843+00:00",
+  "data_path": "/kaggle/input/datasets/parthkharbanda/global-supply-chain/global_supply_chain_disruption_v1.csv",
+  "row_count": 10000,
+  "use_leakage_safe_classifier": true,
+  "disruption_classifier": {
+    "threshold": 0.35,
+    "roc_auc": 0.5162661683156444,
+    "pr_auc": 0.13103419258125687,
+    "accuracy": 0.5445,
+    "precision": 0.13925438596491227,
+    "recall": 0.5019762845849802,
+    "f1": 0.21802575107296138,
+    "tn": 962,
+    "fp": 785,
+    "fn": 126,
+    "tp": 127,
+    "feature_count": 20,
+    "mode": "leakage_safe"
+  },
+  "cost_predictor_agent_compatible": {
+    "model_file": "cost_predictor.pkl",
+    "feature_count": 11,
+    "mae": 6124.337093527832,
+    "median_absolute_error": 2203.4810595703125,
+    "mape_pct": 171.16554538847438,
+    "median_ape_pct": 41.33526032663006,
+    "r2": 0.6046918150011591
+  },
+  "cost_predictor_enhanced": {
+    "model_file": "cost_predictor_enhanced.pkl",
+    "feature_count": 23,
+    "mae": 2065.9413976068354,
+    "median_absolute_error": 221.18998046875004,
+    "mape_pct": 13.707092656190763,
+    "median_ape_pct": 6.44103453839868,
+    "r2": 0.8917335740754069
+  }
+}

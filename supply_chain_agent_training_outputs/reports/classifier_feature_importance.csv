@@ -1,0 +1,21 @@
+feature,importance
+route_Suez,0.0642112
+mode_Sea,0.05607593
+geo_weather_interaction,0.056046102
+route_Atlantic,0.056026865
+route_Commodity,0.055821273
+composite_risk_score,0.054493196
+route_Intra-Asia,0.05383721
+Inflation_Rate_Pct,0.052945662
+Weather_Severity_Index,0.05229287
+product_Perishable Foods,0.05209978
+route_risk_score,0.05198679
+route_Pacific,0.05184491
+Geopolitical_Risk_Index,0.049702205
+product_Semiconductors,0.047781367
+product_Auto Parts,0.047444217
+Scheduled_Lead_Time_Days,0.047410794
+lead_time_buffer,0.04656405
+product_criticality,0.046125233
+product_Pharmaceuticals,0.04002108
+mode_Air,0.017269261

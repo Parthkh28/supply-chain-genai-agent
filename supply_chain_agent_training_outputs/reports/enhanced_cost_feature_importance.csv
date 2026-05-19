@@ -1,0 +1,24 @@
+feature,importance
+mode_Sea,0.62505245
+Scheduled_Lead_Time_Days,0.22012618
+Order_Weight_Kg,0.049556978
+Base_Lead_Time_Days,0.025934406
+route_Commodity,0.011770067
+Geopolitical_Risk_Index,0.009390611
+route_risk_score,0.007852357
+route_Suez,0.0076709273
+lead_time_buffer,0.007379957
+Weather_Severity_Index,0.00669296
+geo_weather_interaction,0.0059535974
+route_Intra-Asia,0.005389446
+mode_Air,0.0045289565
+route_Pacific,0.0035053669
+route_Atlantic,0.0027880769
+product_criticality,0.0025214087
+product_Pharmaceuticals,0.0024411588
+product_Semiconductors,0.0011886109
+product_Perishable Foods,8.720249e-05
+product_Consumer Electronics,8.229418e-05
+product_Textiles,4.2538803e-05
+product_Raw Materials,4.1187173e-05
+product_Auto Parts,3.2429307e-06
