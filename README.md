@@ -1,4 +1,3 @@
-@'
 # Supply Chain GenAI Agent
 
 End-to-end supply-chain disruption resolution system combining machine learning, RAG, and GenAI agent workflows.
@@ -39,3 +38,41 @@ supply_chain_agent_training_outputs/
     faiss_index/
       index.faiss
       index.pkl
+```
+
+## Setup & Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Parthkh28/supply-chain-genai-agent.git
+   cd supply-chain-genai-agent
+   ```
+
+2. **Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Environment Variables:**
+   Copy `.env.example` to `.env` and configure your settings:
+   ```bash
+   cp .env.example .env
+   ```
+   Ensure you add your `GROQ_API_KEY`.
+
+## Usage
+
+To run the agent workflow:
+
+```bash
+python supply_chain_genai_agent_groq_hf.py
+```
