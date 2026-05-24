@@ -5,11 +5,21 @@ scikit-learn
 xgboost
 pydantic>=2,<3
 
+# Class-imbalance handling for the disruption classifier (notebook).
+imbalanced-learn
+
+# RAG + agent stack.
 langchain
 langchain-community
 langgraph
 faiss-cpu
+rank_bm25
 
+# LLM + embeddings.
 langchain-groq
 langchain-huggingface
 sentence-transformers
+
+# API layer.
+fastapi
+uvicorn[standard]

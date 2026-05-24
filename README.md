@@ -89,6 +89,9 @@ supply-chain-genai-agent/
   supply_chain_agent_training_outputs/
     models/
       disruption_classifier.pkl
+      disruption_classifier_base_xgb.pkl
+      disruption_classifier_calibrated.pkl
+      active_exception_detector.pkl
       cost_predictor.pkl
       cost_predictor_enhanced.pkl
       feature_config.json
@@ -98,9 +101,19 @@ supply-chain-genai-agent/
 
     reports/
       metrics.json
+      metrics_summary.csv
+      data_quality_report.json
+      classifier_candidate_selection_validation_only.csv
+      classifier_validation_threshold_sweep.csv
+      classifier_test_threshold_sweep_diagnostic_not_used_for_tuning.csv
       classifier_feature_importance.csv
+      classifier_final_test_predictions.csv
+      active_exception_feature_importance.csv
+      active_exception_final_test_predictions.csv
       agent_compatible_cost_feature_importance.csv
+      agent_compatible_cost_final_test_predictions.csv
       enhanced_cost_feature_importance.csv
+      enhanced_cost_final_test_predictions.csv
 ```
 
 The FAISS index is generated locally and is usually not committed:
@@ -255,10 +268,14 @@ Optional:
 
 ```bash
 GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_FALLBACK_MODEL=llama-3.1-8b-instant
 SUPPLY_CHAIN_MODELS_DIR=supply_chain_agent_training_outputs/models
 SUPPLY_CHAIN_KB_DIR=supply_chain_agent_training_outputs/knowledge_base
 SUPPLY_CHAIN_DATA_PATH=data/global_supply_chain_disruption_v1.csv
+SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor_enhanced.pkl
+SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_enhanced
 SUPPLY_CHAIN_REPLAY_MODE=0
+SUPPLY_CHAIN_CLASSIFIER_CAN_TRIGGER_RESOLUTION=0
 ```
 
 On Windows PowerShell:
@@ -506,30 +523,126 @@ These files summarize model performance and feature importance for the trained X
 
 ---
 
-## Production Extensions
+## HTTP API (FastAPI)
 
-This project is designed as a local/demo portfolio system.
+The agent is now exposed as an HTTP service via `api.py`. Run it locally with:
 
-The current implementation:
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000
+```
 
-- Generates ERP/TMS-style execution payloads
-- Does not directly call external ERP or TMS APIs
-- Uses Groq for LLM calls
-- Uses HuggingFace embeddings locally
-- Uses FAISS for local vector search
-- Uses LangGraph memory for workflow checkpointing
+### Endpoints
 
-Recommended production additions:
+| Method | Path | Purpose |
+|---|---|---|
+| `GET`  | `/health` | Liveness probe |
+| `GET`  | `/ready`  | Readiness probe — reports which artifacts are loaded |
+| `POST` | `/resolve` | Run an order through the workflow |
+| `POST` | `/approve/{thread_id}` | Resume a paused HITL workflow with a human decision |
+| `POST` | `/feedback` | Record an actual outcome for retraining |
 
-- FastAPI service wrapper
-- Persistent LangGraph checkpoint store
-- Authentication and authorization
-- LangSmith or Langfuse tracing for agent observability
+`/resolve` returns one of two statuses:
+
+- `resolved` — workflow completed with a final decision and execution payload
+- `pending_approval` — workflow paused at HITL; the caller must POST to `/approve/{thread_id}`
+
+### Async HITL pattern
+
+```bash
+# 1. Submit order — receives pending_approval if high-risk/low-confidence
+curl -X POST http://localhost:8000/resolve -H "Content-Type: application/json" -d @order.json
+
+# 2. Human reviewer approves the recommended action
+curl -X POST http://localhost:8000/approve/ORDER-123 \
+     -H "Content-Type: application/json" \
+     -d '{"approved": true, "action": "Re-routing", "reviewer": "ops@company.com"}'
+
+# 3. Later, capture the actual outcome
+curl -X POST http://localhost:8000/feedback \
+     -H "Content-Type: application/json" \
+     -d '{"order_id":"ORDER-123","recommended_action":"Re-routing","actual_action":"Re-routing","actual_delay_days":4.5,"actual_cost_usd":17500,"predicted_cost_usd":18200}'
+```
+
+---
+
+## Docker
+
+```bash
+docker build -t supply-chain-genai-agent .
+docker run -p 8000:8000 \
+  -e GROQ_API_KEY=$GROQ_API_KEY \
+  -e GROQ_FALLBACK_MODEL=llama-3.1-8b-instant \
+  supply-chain-genai-agent
+```
+
+The Dockerfile pre-downloads the HuggingFace embedding model and (optionally)
+builds the FAISS index at image build time for fast cold starts.
+
+---
+
+## Enhanced Architecture
+
+The current implementation includes:
+
+- **Enhanced cost model** as the default, evaluated on an untouched final test split
+- **Hybrid retrieval** - FAISS dense + BM25 sparse via `EnsembleRetriever` (60/40 weights, RRF)
+- **LLM response caching** - `InMemoryCache` so identical prompts skip the API
+- **LLM fallback chain** - automatic retry on a second Groq model via `GROQ_FALLBACK_MODEL`
+- **Temporal + lane features** - `Order_Date`, `Origin_City`, `Destination_City` now flow into both the model and the LLM prompts
+- **Outcome feedback loop** - `record_outcome()` / `POST /feedback` persists actual outcomes for retraining
+- **Operational detection split** - observed delay/status signals trigger resolution; the leakage-safe classifier is kept as an early-warning risk prior
+- **Clean v2 training protocol** - 60/20/20 train/validation/final-test split, validation-only early stopping/calibration/threshold tuning, and final-test-only reporting
+- **Class-imbalance diagnostics** - no SMOTE by default for one-hot matrices; validation-only candidate selection compares unweighted vs. balanced `scale_pos_weight`
+- **Stronger XGBoost training** - regularization, early stopping, calibrated classifier probabilities, baselines, WAPE/RMSLE, and error quantiles
+- **Enriched RAG knowledge base** - lane-specific and seasonal records expand the playbook from ~18 docs to 100+
+- **ERP/TMS-style execution payloads** with full audit trail
+- **LangGraph multi-agent workflow** with conditional routing and HITL interrupts
+
+### Classifier interpretation
+
+The project now separates three labels that are easy to confuse:
+
+- `is_event_disruption` / `is_disrupted` - `Disruption_Event` is present.
+- `is_late` - delivery is late by status or observed lead-time overrun.
+- `is_active_exception` - either an event disruption or a late delivery exists.
+
+The disruption classifier is intentionally treated as an **early-warning risk prior**,
+not as the default hard trigger for mitigation execution. On the leakage-safe feature
+set, the synthetic dataset does not provide enough class separation to support a
+high-precision binary event detector. The operational workflow therefore triggers full
+resolution from observed exception signals such as `observed_delay_days > 0`,
+`Delivery_Status != "On Time"`, or `Actual_Lead_Time_Days > Scheduled_Lead_Time_Days`.
+
+The notebook also trains a separate `active_exception_detector.pkl` using observed
+post-departure state. This model is reported separately from the leakage-safe event
+risk classifier because it answers a different operational question: "is this shipment
+currently in exception?"
+
+For demos only, set `SUPPLY_CHAIN_CLASSIFIER_CAN_TRIGGER_RESOLUTION=1` to allow the
+classifier threshold to trigger the full resolution path.
+
+### Dataset validation
+
+The training notebook writes `reports/data_quality_report.json` and records the same
+summary inside `metrics.json`. Important validated assumptions:
+
+- `Delay_Days` is interpreted as late-days: `max(Actual_Lead_Time_Days - Scheduled_Lead_Time_Days, 0)`, not raw arrival variance.
+- `raw_lead_time_delta_days` preserves early arrivals as negative values.
+- `observed_delay_days` is the canonical delay used for delay ratios, active exception detection, and RAG playbook delay averages.
+- Disruption events with on-time delivery are kept as event disruptions, since they may represent successfully mitigated disruptions.
+- Late deliveries with no `Disruption_Event` are active exceptions, but not event disruptions.
+- Negative `Inflation_Rate_Pct` values are treated as deflation and clipped to zero only for the risk-score component.
+
+Recommended further additions for full production:
+
+- Replace `MemorySaver` with `SqliteSaver` or `PostgresSaver` (persistent HITL state across restarts)
+- Authentication and authorization (API key header or OAuth on `/resolve` and `/approve`)
+- LangSmith or Langfuse tracing
 - MLflow model versioning
-- Managed vector database such as Pinecone, Weaviate, or Milvus for scale
+- Managed vector database (Pinecone, Weaviate, Milvus) for KB at scale
 - Live ERP/TMS API integration
 - Model monitoring and drift detection
-- CI/CD, Docker, and cloud deployment
+- CI/CD with the included Dockerfile
 
 ---
 

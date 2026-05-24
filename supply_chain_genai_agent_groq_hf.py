@@ -54,6 +54,8 @@ os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
 try:
     from langchain_core.documents import Document
+    from langchain_core.globals import set_llm_cache
+    from langchain_core.caches import InMemoryCache
     from langchain_community.vectorstores import FAISS
     from langchain_groq import ChatGroq
     from langchain_huggingface import HuggingFaceEmbeddings
@@ -61,11 +63,26 @@ try:
     from langgraph.graph import END, StateGraph
     from langgraph.types import interrupt
 
+    set_llm_cache(InMemoryCache())
+
     _LANGGRAPH_AVAILABLE = True
     _LANGGRAPH_IMPORT_ERROR: str | None = None
 except ImportError as _exc:
     _LANGGRAPH_AVAILABLE = False
     _LANGGRAPH_IMPORT_ERROR = repr(_exc)
+
+# Hybrid retrieval is optional. If rank_bm25 or langchain EnsembleRetriever isn't
+# installed, the agent falls back to dense-only FAISS retrieval transparently.
+try:
+    from langchain_community.retrievers import BM25Retriever
+    from langchain.retrievers import EnsembleRetriever
+
+    _HYBRID_RETRIEVAL_AVAILABLE = True
+except ImportError as _hybrid_exc:
+    BM25Retriever = None  # type: ignore[assignment]
+    EnsembleRetriever = None  # type: ignore[assignment]
+    _HYBRID_RETRIEVAL_AVAILABLE = False
+    _HYBRID_IMPORT_ERROR: str | None = repr(_hybrid_exc)
 
 
 # ---------------------------------------------------------------------------
@@ -276,6 +293,10 @@ FEATURE_CONFIG = load_feature_config()
 DISRUPTION_PROB_THRESHOLD: float = float(
     FEATURE_CONFIG.get("disruption_probability_threshold", DEFAULT_DISRUPTION_PROB_THRESHOLD)
 )
+CLASSIFIER_CAN_TRIGGER_RESOLUTION = (
+    os.getenv("SUPPLY_CHAIN_CLASSIFIER_CAN_TRIGGER_RESOLUTION", "0").strip().lower()
+    in {"1", "true", "yes", "y"}
+)
 ROUTE_RISK_MAP: dict[str, float] = dict(
     FEATURE_CONFIG.get("route_risk_map", DEFAULT_ROUTE_RISK_MAP)
 )
@@ -297,11 +318,12 @@ if _leaky_active_features:
         _leaky_active_features,
     )
 
-# Default to the agent-compatible cost model. To use the enhanced model, set:
-#   SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor_enhanced.pkl
-#   SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_enhanced
-COST_MODEL_FILENAME = os.getenv("SUPPLY_CHAIN_COST_MODEL_FILENAME", "cost_predictor.pkl")
-COST_FEATURE_KEY = os.getenv("SUPPLY_CHAIN_COST_FEATURE_KEY", "cost_model_features_agent_compatible")
+# Default to the enhanced cost model (R²=0.89) for substantially better accuracy than
+# the agent-compatible model (R²=0.60). To force the legacy model, set:
+#   SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor.pkl
+#   SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_agent_compatible
+COST_MODEL_FILENAME = os.getenv("SUPPLY_CHAIN_COST_MODEL_FILENAME", "cost_predictor_enhanced.pkl")
+COST_FEATURE_KEY = os.getenv("SUPPLY_CHAIN_COST_FEATURE_KEY", "cost_model_features_enhanced")
 COST_MODEL_FEATURES: list[str] = list(
     FEATURE_CONFIG.get(COST_FEATURE_KEY, DEFAULT_COST_MODEL_FEATURES)
 )
@@ -410,6 +432,55 @@ def has_disruption_event(value: Any) -> bool:
 def is_replay_mode_enabled() -> bool:
     """Return True only when historical labels should be treated as known alerts."""
     return os.getenv("SUPPLY_CHAIN_REPLAY_MODE", "0").strip().lower() in {"1", "true", "yes", "y"}
+
+
+def operational_exception_signals(order: dict[str, Any]) -> list[str]:
+    """Detect observed exception signals that are safe to use in operations.
+
+    The ML classifier is only a weak early-warning prior on this dataset. Actual
+    resolution should be triggered by observed execution signals such as delay,
+    delivery status, or actual lead time exceeding the schedule.
+    """
+    signals: list[str] = []
+
+    raw_delta = _safe(order, "raw_lead_time_delta_days", np.nan)
+    if pd.isna(raw_delta):
+        actual_lead_time = _safe(order, "Actual_Lead_Time_Days", np.nan)
+        scheduled_lead_time = _safe(order, "Scheduled_Lead_Time_Days", np.nan)
+        if not pd.isna(actual_lead_time) and not pd.isna(scheduled_lead_time):
+            raw_delta = actual_lead_time - scheduled_lead_time
+
+    observed_delay = _safe(order, "observed_delay_days", np.nan)
+    if pd.isna(observed_delay):
+        observed_delay = max(float(raw_delta), 0.0) if not pd.isna(raw_delta) else _safe(order, "Delay_Days")
+
+    if observed_delay > 0:
+        signals.append(f"observed_delay_days={observed_delay:g}")
+
+    status = str(order.get("Delivery_Status", "") or "").strip().lower()
+    normal_statuses = {"", "nan", "none", "on time", "ontime", "delivered", "completed"}
+    if status and status not in normal_statuses:
+        signals.append(f"Delivery_Status={order.get('Delivery_Status')}")
+
+    if not pd.isna(raw_delta) and raw_delta > 0:
+        signals.append(
+            f"raw_lead_time_delta_days={raw_delta:g}"
+        )
+
+    return signals
+
+
+def early_warning_band(probability: float, order: dict[str, Any]) -> str:
+    """Map weak classifier probability plus domain risk into a watchlist band."""
+    composite = _safe(order, "composite_risk_score")
+    lane_rate = _safe(order, "lane_disruption_rate", 0.0)
+    if probability >= 0.40 or composite >= 0.75 or lane_rate >= 0.25:
+        return "HIGH_WATCHLIST"
+    if probability >= 0.30 or composite >= 0.60 or lane_rate >= 0.18:
+        return "ELEVATED"
+    if probability >= 0.20 or composite >= 0.45:
+        return "GUARDED"
+    return "LOW"
 
 
 def normalize_action_name(action: Any, *, fallback: str = "Standard Shipping") -> str:
@@ -525,6 +596,42 @@ def print_artifact_report() -> None:
 # Inference-only feature engineering.
 # Mirrors the training notebook, but does not train any model.
 # ---------------------------------------------------------------------------
+def _extract_temporal_features(order: dict[str, Any]) -> dict[str, int | float]:
+    """Derive seasonal/temporal signals from Order_Date when available.
+
+    Adds: order_month, order_quarter, is_typhoon_season (Aug-Oct in Asia-Pacific),
+    is_peak_shipping (Oct-Dec pre-holiday rush), is_lunar_new_year_window (Jan-Feb).
+    Falls back to neutral defaults when Order_Date is missing or malformed.
+    """
+    raw_date = order.get("Order_Date")
+    if raw_date is None or (isinstance(raw_date, float) and pd.isna(raw_date)):
+        return {
+            "order_month": 0,
+            "order_quarter": 0,
+            "is_typhoon_season": 0,
+            "is_peak_shipping": 0,
+            "is_lunar_new_year_window": 0,
+        }
+    try:
+        ts = pd.to_datetime(raw_date)
+    except (ValueError, TypeError):
+        return {
+            "order_month": 0,
+            "order_quarter": 0,
+            "is_typhoon_season": 0,
+            "is_peak_shipping": 0,
+            "is_lunar_new_year_window": 0,
+        }
+    month = int(ts.month)
+    return {
+        "order_month": month,
+        "order_quarter": int((month - 1) // 3 + 1),
+        "is_typhoon_season": int(month in {8, 9, 10}),
+        "is_peak_shipping": int(month in {10, 11, 12}),
+        "is_lunar_new_year_window": int(month in {1, 2}),
+    }
+
+
 def enrich_order(raw: dict[str, Any]) -> dict[str, Any]:
     """Add engineered fields and one-hot columns required by trained models."""
     order = dict(raw)
@@ -534,17 +641,36 @@ def enrich_order(raw: dict[str, Any]) -> dict[str, Any]:
 
     scheduled_lead_time = _safe(order, "Scheduled_Lead_Time_Days")
     base_lead_time = _safe(order, "Base_Lead_Time_Days")
+    actual_lead_time = _safe(order, "Actual_Lead_Time_Days", np.nan)
     delay_days = _safe(order, "Delay_Days")
     geo = _safe(order, "Geopolitical_Risk_Index")
     weather = _safe(order, "Weather_Severity_Index")
     inflation = _safe(order, "Inflation_Rate_Pct")
     shipping_cost = _safe(order, "Shipping_Cost_USD")
 
+    if not pd.isna(actual_lead_time):
+        raw_delta = actual_lead_time - scheduled_lead_time
+        observed_delay = max(raw_delta, 0.0)
+    else:
+        raw_delta = np.nan
+        observed_delay = max(delay_days, 0.0)
+    order["raw_lead_time_delta_days"] = raw_delta
+    order["observed_delay_days"] = observed_delay
+    order["delay_days_delta_vs_raw_delta"] = (
+        delay_days - raw_delta if not pd.isna(raw_delta) else 0.0
+    )
+    order["delay_days_delta_vs_policy"] = delay_days - observed_delay
+    order["delay_matches_late_days_policy"] = int(abs(order["delay_days_delta_vs_policy"]) < 1e-9)
+
+    status = str(order.get("Delivery_Status", "") or "").strip().lower()
+    order["delivery_status_late"] = int(status not in {"", "nan", "none", "on time", "ontime"})
+
     order["lead_time_buffer"] = scheduled_lead_time - base_lead_time
-    order["delay_ratio"] = delay_days / (scheduled_lead_time + 1e-6)
+    order["delay_ratio"] = observed_delay / (scheduled_lead_time + 1e-6)
     order["geo_weather_interaction"] = geo * weather
+    order["inflation_risk_component"] = max(inflation, 0.0) / 10.0
     order["composite_risk_score"] = (
-        geo * 0.50 + (weather / 10.0) * 0.30 + (inflation / 10.0) * 0.20
+        geo * 0.50 + (weather / 10.0) * 0.30 + order["inflation_risk_component"] * 0.20
     )
     order["route_risk_score"] = ROUTE_RISK_MAP.get(order.get("Route_Type", ""), 0.5)
     order["product_criticality"] = PRODUCT_CRITICALITY_MAP.get(
@@ -555,7 +681,27 @@ def enrich_order(raw: dict[str, Any]) -> dict[str, Any]:
     # Exact percentile is dataset-level. For real-time inference, estimate it from
     # route-level reference stats saved by the training notebook when available.
     order["cost_percentile"] = estimate_route_cost_percentile(order)
-    order["air_viable"] = int(order["product_criticality"] >= 0.5 and delay_days >= 5)
+    order["air_viable"] = int(order["product_criticality"] >= 0.5 and observed_delay >= 5)
+
+    # Temporal context (extracted from Order_Date if present). These fields are kept
+    # in the enriched order dict and surfaced to the LLM prompts. They are also
+    # picked up by the classifier when feature_config.json lists them in the active
+    # feature set after a notebook retrain.
+    order.update(_extract_temporal_features(order))
+
+    # Lane identifier and origin/destination — used as LLM context. Lane-level
+    # disruption rates can be injected through feature_config.json's
+    # lane_disruption_rate_map after the notebook is re-run.
+    origin = str(order.get("Origin_City", "")).strip()
+    destination = str(order.get("Destination_City", "")).strip()
+    if origin and destination:
+        order["lane"] = f"{origin} -> {destination}"
+    else:
+        order["lane"] = order.get("lane", "")
+    lane_rates: dict[str, float] = FEATURE_CONFIG.get("lane_disruption_rate_map", {}) or {}
+    order["lane_disruption_rate"] = float(
+        lane_rates.get(order["lane"], lane_rates.get("__global__", 0.0))
+    )
 
     mode = str(order.get("Transportation_Mode", ""))
     order["mode_Sea"] = int(mode == "Sea")
@@ -628,9 +774,29 @@ def load_disruption_classifier():
 
 @lru_cache(maxsize=1)
 def load_cost_predictor():
-    path = _require_file(MODELS_DIR / COST_MODEL_FILENAME, "cost predictor")
-    logger.info("Loading cost predictor from %s", path)
-    return joblib.load(path)
+    global COST_MODEL_FILENAME, COST_FEATURE_KEY, COST_MODEL_FEATURES
+    primary = MODELS_DIR / COST_MODEL_FILENAME
+    if primary.exists():
+        logger.info("Loading cost predictor from %s", primary)
+        return joblib.load(primary)
+
+    # Graceful fallback: if the enhanced model is missing, drop back to the legacy
+    # model + its feature list so the agent still runs end-to-end on partial artifacts.
+    fallback = MODELS_DIR / "cost_predictor.pkl"
+    if COST_MODEL_FILENAME != "cost_predictor.pkl" and fallback.exists():
+        logger.warning(
+            "Cost predictor %s not found. Falling back to cost_predictor.pkl with the agent-compatible feature set.",
+            primary,
+        )
+        COST_MODEL_FILENAME = "cost_predictor.pkl"
+        COST_FEATURE_KEY = "cost_model_features_agent_compatible"
+        COST_MODEL_FEATURES = list(
+            FEATURE_CONFIG.get(COST_FEATURE_KEY, DEFAULT_COST_MODEL_FEATURES)
+        )
+        return joblib.load(fallback)
+
+    _require_file(primary, "cost predictor")
+    return joblib.load(primary)
 
 
 # ---------------------------------------------------------------------------
@@ -680,7 +846,7 @@ def load_vector_store():
     index_dir = KB_DIR / "faiss_index"
     if not index_dir.exists():
         logger.warning(
-            "FAISS index not found at %s. Falling back to simple keyword retrieval.",
+            "FAISS index not found at %s. Falling back to BM25/keyword retrieval.",
             index_dir,
         )
         return None
@@ -694,14 +860,78 @@ def load_vector_store():
     )
 
 
-def retrieve_context(query: str, k: int = 3) -> str:
-    """Retrieve RAG context. Uses FAISS when available, otherwise simple text scoring."""
-    vector_store = load_vector_store()
-    if vector_store is not None:
-        docs = vector_store.similarity_search(query, k=k)
-        return "\n\n".join(doc.page_content for doc in docs)
+@lru_cache(maxsize=1)
+def load_hybrid_retriever(k: int = 4):
+    """Build a hybrid retriever combining dense FAISS + sparse BM25.
 
-    # Fallback for local demos before the FAISS index is built.
+    Weighted via Reciprocal Rank Fusion through LangChain's EnsembleRetriever:
+      - 60% dense (semantic similarity, handles paraphrases)
+      - 40% sparse (BM25, handles exact entity/term matches like "Suez" or "Pharmaceuticals")
+
+    Degrades gracefully:
+      - Without BM25/EnsembleRetriever installed -> returns the dense FAISS retriever.
+      - Without a FAISS index but with BM25 available -> returns BM25-only.
+      - Without either -> returns None (caller will use keyword fallback).
+    """
+    if not _LANGGRAPH_AVAILABLE:
+        return None
+
+    vector_store = load_vector_store()
+
+    if not _HYBRID_RETRIEVAL_AVAILABLE:
+        logger.info(
+            "Hybrid retrieval unavailable (%s). Using dense-only FAISS.",
+            _HYBRID_IMPORT_ERROR,
+        )
+        if vector_store is None:
+            return None
+        return vector_store.as_retriever(search_kwargs={"k": k})
+
+    try:
+        docs_text = load_playbook_documents()
+    except FileNotFoundError:
+        return None
+
+    lc_docs = [
+        Document(page_content=text, metadata={"source": text.splitlines()[0].strip()})
+        for text in docs_text
+    ]
+    bm25 = BM25Retriever.from_documents(lc_docs)
+    bm25.k = k
+
+    if vector_store is None:
+        return bm25
+
+    dense = vector_store.as_retriever(search_kwargs={"k": k})
+    return EnsembleRetriever(retrievers=[dense, bm25], weights=[0.6, 0.4])
+
+
+def retrieve_context(query: str, k: int = 3) -> str:
+    """Retrieve RAG context via hybrid (FAISS + BM25) retrieval with graceful degradation.
+
+    Hierarchy:
+      1. Hybrid EnsembleRetriever (dense + sparse) — best quality
+      2. BM25-only — when FAISS index is missing
+      3. Simple keyword scoring — when LangChain is unavailable
+    """
+    retriever = load_hybrid_retriever(k=max(k, 4)) if _LANGGRAPH_AVAILABLE else None
+    if retriever is not None:
+        try:
+            docs = retriever.invoke(query)
+            unique: list[str] = []
+            seen: set[str] = set()
+            for doc in docs:
+                if doc.page_content not in seen:
+                    unique.append(doc.page_content)
+                    seen.add(doc.page_content)
+                if len(unique) >= k:
+                    break
+            if unique:
+                return "\n\n".join(unique)
+        except Exception as exc:
+            logger.warning("Hybrid retrieval failed (%s). Falling back to keyword scoring.", exc)
+
+    # Fallback for local demos before any LangChain dependencies are present.
     try:
         docs = load_playbook_documents()
     except FileNotFoundError:
@@ -719,15 +949,38 @@ def retrieve_context(query: str, k: int = 3) -> str:
     )
 
 
-def get_llm() -> ChatGroq:
+@lru_cache(maxsize=1)
+def get_llm():
+    """Return the primary Groq LLM, with an optional fallback model chained in.
+
+    Set GROQ_FALLBACK_MODEL to a second Groq model id (e.g. llama-3.1-8b-instant) to
+    automatically retry on provider errors. Responses are cached in-memory via
+    InMemoryCache so identical prompts skip the API entirely.
+    """
     if not _LANGGRAPH_AVAILABLE:
         raise RuntimeError("LangChain/LangGraph dependencies are not installed.")
-    return ChatGroq(
+
+    api_key = os.getenv("GROQ_API_KEY")
+    primary = ChatGroq(
         model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
         temperature=0,
         max_retries=2,
-        api_key=os.getenv("GROQ_API_KEY"),
+        api_key=api_key,
     )
+
+    fallback_model = os.getenv("GROQ_FALLBACK_MODEL")
+    if fallback_model:
+        try:
+            fallback = ChatGroq(
+                model=fallback_model,
+                temperature=0,
+                max_retries=2,
+                api_key=api_key,
+            )
+            return primary.with_fallbacks([fallback])
+        except Exception as exc:
+            logger.warning("Failed to attach LLM fallback %s (%s).", fallback_model, exc)
+    return primary
 
 
 # ---------------------------------------------------------------------------
@@ -743,6 +996,10 @@ if _LANGGRAPH_AVAILABLE:
         disruption_detected: bool
         disruption_probability: float
         disruption_type: str
+        active_exception: bool
+        detection_source: str
+        early_warning_risk_band: str
+        exception_signals: list[str]
 
         risk_assessment: dict
         risk_score: float
@@ -764,11 +1021,16 @@ if _LANGGRAPH_AVAILABLE:
 
 
     def detect_exception(state: SupplyChainState) -> dict:
-        """Use the pre-trained classifier plus an optional historical replay override.
+        """Detect active exceptions and expose classifier output as early-warning context.
 
         In real-time mode, `Disruption_Event` is treated as a label-like field and is
         ignored for detection. Set SUPPLY_CHAIN_REPLAY_MODE=1 only when replaying
         historical CSV rows where a known event should force the workflow path.
+
+        The leakage-safe classifier is intentionally not the default hard trigger
+        because its precision is weak on this synthetic dataset. Set
+        SUPPLY_CHAIN_CLASSIFIER_CAN_TRIGGER_RESOLUTION=1 only for demos where a
+        classifier-threshold hit should run the full resolution workflow.
         """
         order_id = state["order_id"]
         order = enrich_order(state["order"])
@@ -784,19 +1046,38 @@ if _LANGGRAPH_AVAILABLE:
         if rule_hit:
             probability = max(probability, 0.85)
 
-        disrupted = probability >= DISRUPTION_PROB_THRESHOLD or rule_hit
+        exception_signals = operational_exception_signals(order)
+        ops_hit = bool(exception_signals)
+        classifier_hit = probability >= DISRUPTION_PROB_THRESHOLD
+        classifier_triggered = classifier_hit and CLASSIFIER_CAN_TRIGGER_RESOLUTION
+
+        disrupted = ops_hit or rule_hit or classifier_triggered
+        risk_band = early_warning_band(probability, order)
+
         if disrupted and rule_hit:
             disruption_type = str(normalized_event)
         elif disrupted:
             disruption_type = infer_disruption_type(order)
         else:
             disruption_type = "None"
+
+        if rule_hit:
+            detection_source = "historical_replay_label"
+        elif ops_hit:
+            detection_source = "observed_operational_signal"
+        elif classifier_triggered:
+            detection_source = "classifier_threshold"
+        else:
+            detection_source = "early_warning_risk_prior"
         
 
         logger.info(
-            "[DETECTOR] %s probability=%.3f rule_hit=%s replay_mode=%s result=%s",
+            "[DETECTOR] %s probability=%.3f band=%s source=%s ops_hit=%s rule_hit=%s replay_mode=%s result=%s",
             order_id,
             probability,
+            risk_band,
+            detection_source,
+            ops_hit,
             rule_hit,
             replay_mode,
             "DISRUPTED" if disrupted else "NORMAL",
@@ -806,15 +1087,25 @@ if _LANGGRAPH_AVAILABLE:
             "disruption_detected": bool(disrupted),
             "disruption_probability": round(float(probability), 4),
             "disruption_type": disruption_type,
+            "active_exception": bool(disrupted),
+            "detection_source": detection_source,
+            "early_warning_risk_band": risk_band,
+            "exception_signals": exception_signals,
             "audit_log": [
                 _audit(
                     "EXCEPTION_DETECTOR",
                     order_id,
                     f"{'DISRUPTION DETECTED' if disrupted else 'No disruption'} "
-                    f"(prob={probability:.3f}, rule={rule_hit}, replay={replay_mode})",
+                    f"(prob={probability:.3f}, band={risk_band}, source={detection_source})",
                     {
                         "probability": float(probability),
+                        "risk_band": risk_band,
+                        "detection_source": detection_source,
+                        "exception_signals": exception_signals,
+                        "classifier_trigger_enabled": bool(CLASSIFIER_CAN_TRIGGER_RESOLUTION),
+                        "classifier_threshold_hit": bool(classifier_hit),
                         "rule_triggered": bool(rule_hit),
+                        "ops_triggered": bool(ops_hit),
                         "replay_mode": bool(replay_mode),
                         "type": disruption_type,
                     },
@@ -822,7 +1113,8 @@ if _LANGGRAPH_AVAILABLE:
             ],
             "reasoning_trace": [
                 f"[DETECTOR] Order {order_id}: prob={probability:.3f}, "
-                f"rule_hit={rule_hit}, replay_mode={replay_mode}, type={disruption_type}"
+                f"band={risk_band}, source={detection_source}, "
+                f"signals={exception_signals or 'none'}, type={disruption_type}"
             ],
         })
 
@@ -840,9 +1132,21 @@ if _LANGGRAPH_AVAILABLE:
 
         score = geo * 0.35 + (weather / 10.0) * 0.25 + product_criticality * 0.25 + route_risk * 0.15
 
+        lane = order.get("lane") or f"{order.get('Origin_City', '?')} -> {order.get('Destination_City', '?')}"
+        season_flags = [
+            label for label, flag in [
+                ("typhoon season", order.get("is_typhoon_season")),
+                ("peak shipping", order.get("is_peak_shipping")),
+                ("lunar new year window", order.get("is_lunar_new_year_window")),
+            ] if flag
+        ]
+        season_str = ", ".join(season_flags) if season_flags else "off-peak"
+        order_month = order.get("order_month") or "unknown"
+
         query = (
-            f"{state['disruption_type']} on {order.get('Route_Type')} route carrying "
-            f"{order.get('Product_Category')}"
+            f"{state['disruption_type']} on {order.get('Route_Type')} route from "
+            f"{order.get('Origin_City', '')} to {order.get('Destination_City', '')} "
+            f"carrying {order.get('Product_Category')} during month {order_month}"
         )
         rag_context = retrieve_context(query, k=3)
 
@@ -851,15 +1155,21 @@ if _LANGGRAPH_AVAILABLE:
             "ORDER DETAILS:\n"
             f"  Order ID            : {order_id}\n"
             f"  Disruption Type     : {state['disruption_type']}\n"
+            f"  Lane                : {lane}\n"
             f"  Route               : {order.get('Route_Type')}\n"
             f"  Product             : {order.get('Product_Category')}\n"
+            f"  Mode                : {order.get('Transportation_Mode')}\n"
+            f"  Order Date / Month  : {order.get('Order_Date', 'n/a')} (month {order_month})\n"
+            f"  Seasonal Context    : {season_str}\n"
             f"  Current Delay       : {delay} days\n"
             f"  Geopolitical Risk   : {geo}\n"
             f"  Weather Severity    : {weather}\n"
+            f"  Lane Disruption Rate: {order.get('lane_disruption_rate', 0.0):.2%}\n"
             f"  Composite Risk Score: {score:.3f}\n\n"
             "HISTORICAL CONTEXT:\n"
             f"{rag_context}\n\n"
-            "Return severity as exactly one of CRITICAL / HIGH / MEDIUM / LOW. "
+            "Consider how the route, lane history, product criticality, and seasonal context "
+            "interact. Return severity as exactly one of CRITICAL / HIGH / MEDIUM / LOW. "
             "Explain the reasoning briefly and identify the single most important risk factor."
         )
 
@@ -918,9 +1228,13 @@ if _LANGGRAPH_AVAILABLE:
         order = state["order"]
         risk_assessment = state["risk_assessment"]
 
+        lane = order.get("lane") or f"{order.get('Origin_City', '?')} -> {order.get('Destination_City', '?')}"
+        order_month = order.get("order_month") or "unknown"
+
         query = (
             f"Best mitigation for {state['disruption_type']} affecting "
-            f"{order.get('Product_Category')} on {order.get('Route_Type')} route"
+            f"{order.get('Product_Category')} on {order.get('Route_Type')} route "
+            f"from {order.get('Origin_City', '')} to {order.get('Destination_City', '')}"
         )
         rag_context = retrieve_context(query, k=4)
 
@@ -929,16 +1243,21 @@ if _LANGGRAPH_AVAILABLE:
             "SITUATION:\n"
             f"  Disruption   : {state['disruption_type']}\n"
             f"  Severity     : {risk_assessment['severity']}\n"
+            f"  Lane         : {lane}\n"
             f"  Route        : {order.get('Route_Type')}\n"
+            f"  Mode         : {order.get('Transportation_Mode')}\n"
             f"  Product      : {order.get('Product_Category')} "
             f"(criticality {risk_assessment['product_criticality']:.2f})\n"
-            f"  Current Delay: {order.get('Delay_Days', 0)} days\n\n"
+            f"  Order Month  : {order_month}\n"
+            f"  Current Delay: {order.get('Delay_Days', 0)} days\n"
+            f"  Lane Disruption Rate: {order.get('lane_disruption_rate', 0.0):.2%}\n\n"
             "HISTORICAL MITIGATION OUTCOMES:\n"
             f"{rag_context}\n\n"
-            "Propose exactly 3 mitigation options ranked best-first. For each option, "
-            "use one of these action names exactly: Expedited Air Freight, Re-routing, "
-            "Standard Shipping, Delay Accepted. Include estimated delay reduction, "
-            "confidence from 0 to 1, and rationale."
+            "Propose exactly 3 mitigation options ranked best-first. Tailor your "
+            "recommendations to the lane, product criticality, and seasonal context. "
+            "For each option, use one of these action names exactly: "
+            "Expedited Air Freight, Re-routing, Standard Shipping, Delay Accepted. "
+            "Include estimated delay reduction, confidence from 0 to 1, and rationale."
         )
 
         try:
@@ -1236,6 +1555,51 @@ def resolve_order(order: dict[str, Any], order_id: str | None = None) -> dict[st
     return app.invoke(initial_state, config=config)
 
 
+def record_outcome(
+    order_id: str,
+    recommended_action: str,
+    actual_action: str,
+    actual_delay_days: float,
+    actual_cost_usd: float,
+    predicted_cost_usd: float | None = None,
+    notes: str = "",
+    outcomes_path: Path | None = None,
+) -> Path:
+    """Append a JSONL outcome record for later retraining.
+
+    Outcomes are the missing feedback loop in the original pipeline: the agent makes a
+    recommendation, but actual delay/cost/action data was never captured. This function
+    persists each resolved order's actual outcome to a JSONL file that a retraining job
+    can replay to improve the disruption classifier and cost predictor.
+    """
+    outcomes_path = outcomes_path or (DEFAULT_OUTPUT_DIR / "outcomes" / "agent_outcomes.jsonl")
+    outcomes_path.parent.mkdir(parents=True, exist_ok=True)
+
+    cost_error = None
+    if predicted_cost_usd is not None:
+        try:
+            cost_error = float(actual_cost_usd) - float(predicted_cost_usd)
+        except (TypeError, ValueError):
+            cost_error = None
+
+    record = {
+        "timestamp": _ts(),
+        "order_id": order_id,
+        "recommended_action": recommended_action,
+        "actual_action": actual_action,
+        "action_matched": recommended_action == actual_action,
+        "actual_delay_days": float(actual_delay_days),
+        "actual_cost_usd": float(actual_cost_usd),
+        "predicted_cost_usd": predicted_cost_usd,
+        "cost_error_usd": cost_error,
+        "notes": notes,
+    }
+    with outcomes_path.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(record) + "\n")
+    logger.info("[FEEDBACK] Recorded outcome for %s in %s", order_id, outcomes_path)
+    return outcomes_path
+
+
 def load_order_from_csv(csv_path: Path = DATA_PATH, order_idx: int = 0) -> dict[str, Any]:
     path = _require_file(csv_path, "demo CSV")
     df = pd.read_csv(path)
@@ -1251,6 +1615,9 @@ def print_resolution_result(result: dict[str, Any]) -> None:
     print(f"  Order ID            : {result.get('order_id')}")
     print(f"  Disruption Detected : {result.get('disruption_detected')}")
     print(f"  Disruption Prob.    : {result.get('disruption_probability')}")
+    print(f"  Risk Band           : {result.get('early_warning_risk_band')}")
+    print(f"  Detection Source    : {result.get('detection_source')}")
+    print(f"  Exception Signals   : {result.get('exception_signals')}")
     print(f"  Disruption Type     : {result.get('disruption_type')}")
     if result.get("disruption_detected"):
         print(f"  Severity            : {result.get('risk_assessment', {}).get('severity')}")
@@ -1351,6 +1718,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Auto-approve HITL interrupt for CLI/demo mode.",
     )
 
+    feedback_parser = subparsers.add_parser(
+        "feedback",
+        help="Append an outcome record so future retraining jobs can use real outcomes.",
+    )
+    feedback_parser.add_argument("--order-id", required=True)
+    feedback_parser.add_argument("--recommended-action", required=True)
+    feedback_parser.add_argument("--actual-action", required=True)
+    feedback_parser.add_argument("--actual-delay-days", type=float, required=True)
+    feedback_parser.add_argument("--actual-cost-usd", type=float, required=True)
+    feedback_parser.add_argument("--predicted-cost-usd", type=float, default=None)
+    feedback_parser.add_argument("--notes", default="")
+
     return parser
 
 
@@ -1369,6 +1748,16 @@ def main() -> None:
         run_index_mode(args)
     elif args.command == "resolve":
         run_resolve_mode(args)
+    elif args.command == "feedback":
+        record_outcome(
+            order_id=args.order_id,
+            recommended_action=args.recommended_action,
+            actual_action=args.actual_action,
+            actual_delay_days=args.actual_delay_days,
+            actual_cost_usd=args.actual_cost_usd,
+            predicted_cost_usd=args.predicted_cost_usd,
+            notes=args.notes,
+        )
     else:
         parser.error(f"Unknown command: {args.command}")
 
