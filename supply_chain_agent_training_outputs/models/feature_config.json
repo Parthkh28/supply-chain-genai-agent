@@ -1,6 +1,15 @@
 {
-  "disruption_probability_threshold": 0.35,
+  "version": "v2_clean_validation_final_test",
+  "disruption_probability_threshold": 0.16,
   "use_leakage_safe_classifier": true,
+  "use_smote": false,
+  "threshold_optimized": true,
+  "threshold_tuned_on": "validation",
+  "threshold_min_precision": 0.2,
+  "threshold_min_recall": 0.2,
+  "threshold_max_alert_rate": 0.25,
+  "calibrate_classifier": true,
+  "calibration_method": "isotonic",
   "classifier_features_active": [
     "Geopolitical_Risk_Index",
     "Weather_Severity_Index",
@@ -21,7 +30,13 @@
     "product_Pharmaceuticals",
     "product_Perishable Foods",
     "product_Semiconductors",
-    "product_Auto Parts"
+    "product_Auto Parts",
+    "order_month",
+    "order_quarter",
+    "is_typhoon_season",
+    "is_peak_shipping",
+    "is_lunar_new_year_window",
+    "lane_disruption_rate"
   ],
   "classifier_features_demo_agent_compatible": [
     "Geopolitical_Risk_Index",
@@ -71,6 +86,22 @@
     "product_Semiconductors",
     "product_Auto Parts"
   ],
+  "active_exception_features": [
+    "observed_delay_days",
+    "raw_lead_time_delta_days",
+    "delivery_status_late",
+    "delay_ratio",
+    "Scheduled_Lead_Time_Days",
+    "Actual_Lead_Time_Days",
+    "lead_time_buffer",
+    "mode_Sea",
+    "mode_Air",
+    "route_Suez",
+    "route_Pacific",
+    "route_Atlantic",
+    "route_Intra-Asia",
+    "route_Commodity"
+  ],
   "cost_model_features_agent_compatible": [
     "Geopolitical_Risk_Index",
     "Weather_Severity_Index",
@@ -107,7 +138,22 @@
     "product_Auto Parts",
     "product_Consumer Electronics",
     "product_Raw Materials",
-    "product_Textiles"
+    "product_Textiles",
+    "order_month",
+    "order_quarter",
+    "is_typhoon_season",
+    "is_peak_shipping",
+    "is_lunar_new_year_window"
+  ],
+  "temporal_features": [
+    "order_month",
+    "order_quarter",
+    "is_typhoon_season",
+    "is_peak_shipping",
+    "is_lunar_new_year_window"
+  ],
+  "lane_features": [
+    "lane_disruption_rate"
   ],
   "route_risk_map": {
     "Suez": 0.91,
@@ -204,5 +250,15 @@
       "std": 21085.635297764853,
       "count": 10000
     }
-  }
+  },
+  "lane_disruption_rate_map": {
+    "Hamburg, DE -> New York, US": 0.10617760617760617,
+    "Mumbai, IN -> Felixstowe, UK": 0.15451895043731778,
+    "Santos, BR -> Shanghai, CN": 0.09753483386923902,
+    "Shanghai, CN -> Los Angeles, US": 0.11854103343465046,
+    "Shenzhen, CN -> Rotterdam, NL": 0.14095238095238094,
+    "Tokyo, JP -> Singapore, SG": 0.14093264248704662,
+    "__global__": 0.12683333333333333
+  },
+  "lane_disruption_rate_source": "training_split_only_no_final_test_leakage"
 }

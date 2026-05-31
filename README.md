@@ -77,6 +77,10 @@ supply-chain-genai-agent/
   requirements.txt
   .env.example
   .gitignore
+  .dockerignore
+  Dockerfile
+  api.py
+  constants.py
 
   supply_chain_genai_agent_groq_hf.py
 
@@ -244,17 +248,24 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-If installing manually:
-
-```bash
-pip install pandas numpy joblib scikit-learn xgboost "pydantic>=2,<3"
-pip install langchain langchain-community langgraph faiss-cpu
-pip install langchain-groq langchain-huggingface sentence-transformers
-```
+> **Note on scikit-learn version:** The packaged model artifacts were serialised with
+> `scikit-learn==1.6.1`. `requirements.txt` pins this exact version so pickled calibrated
+> classifiers deserialise without `InconsistentVersionWarning`. If you upgrade
+> scikit-learn, retrain and re-export the models from the notebook, then update the pin.
 
 ---
 
 ## Environment Variables
+
+Copy `.env.example` to `.env` and fill in your values. `python-dotenv` is included in
+`requirements.txt` and both `api.py` and the CLI agent call `load_dotenv()` at startup,
+so **no manual `export` is required** in local development — the `.env` file is loaded
+automatically.
+
+```bash
+cp .env.example .env
+# then edit .env and set GROQ_API_KEY=sk-...
+```
 
 The agent reads environment variables from the shell. `.env.example` is provided as a reference; do not commit real API keys.
 
@@ -272,8 +283,6 @@ GROQ_FALLBACK_MODEL=llama-3.1-8b-instant
 SUPPLY_CHAIN_MODELS_DIR=supply_chain_agent_training_outputs/models
 SUPPLY_CHAIN_KB_DIR=supply_chain_agent_training_outputs/knowledge_base
 SUPPLY_CHAIN_DATA_PATH=data/global_supply_chain_disruption_v1.csv
-SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor_enhanced.pkl
-SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_enhanced
 SUPPLY_CHAIN_REPLAY_MODE=0
 SUPPLY_CHAIN_CLASSIFIER_CAN_TRIGGER_RESOLUTION=0
 ```
@@ -410,10 +419,10 @@ For real-time JSON inference, do not use replay mode.
 ## Demo Output
 
 <details>
-<summary>Sample disrupted-order run</summary>
+<summary>Sample disrupted-order run (auto-approved, full resolution)</summary>
 
 ```bash
-python supply_chain_genai_agent_groq_hf.py resolve --order-idx 10 --replay-mode
+python supply_chain_genai_agent_groq_hf.py resolve --order-idx 10 --replay-mode --auto-approve
 ```
 
 ```text
@@ -427,17 +436,52 @@ Severity            : HIGH
 Recommended Action  : Re-routing
 Confidence          : 0.55
 Requires HITL       : True
-Final Decision      : None
+Final Decision      : Re-routing
+Auto-approved       : True
+
+Execution Payload:
+  order_id        : ORD-358B0702
+  decision        : Re-routing
+  auto_resolved   : True
+  cost_delta_usd  : -3200.0
+  confidence      : 0.55
+  severity        : HIGH
+  resolved_at     : 2026-05-31T10:42:18+00:00
+  system          : SUPPLY_CHAIN_GENAI_AGENT
 ```
 
 The reasoning trace and audit log show how the decision was produced:
 
 ```text
-[DETECTOR] Order ORD-358B0702: prob=0.850, rule_hit=True
-[RISK] severity=HIGH
-[PLANNER] generated mitigation options
-[COST] selected best action based on utility and cost delta
+[DETECTOR] ORD-358B0702: prob=0.850, band=HIGH_WATCHLIST, source=historical_replay_label
+[RISK]     ORD-358B0702: severity=HIGH, score=0.621, key_factor=composite_risk_score
+[PLANNER]  ORD-358B0702: generated 3 mitigation options
+[COST]     ORD-358B0702: selected Re-routing, cost_delta=-3200, utility=0.742
+[HITL]     ORD-358B0702: auto-approved (HITL gate passed through)
+[EXECUTE]  ORD-358B0702: execution payload generated
 ```
+
+</details>
+
+<details>
+<summary>Sample non-disrupted order (early exit)</summary>
+
+```bash
+python supply_chain_genai_agent_groq_hf.py resolve --order-idx 2 --replay-mode
+```
+
+```text
+SUPPLY CHAIN GENAI AGENT RESULT
+========================================================================
+Order ID            : ORD-1A4C2F01
+Disruption Detected : False
+Disruption Prob.    : 0.18
+Risk Band           : LOW
+Detection Source    : early_warning_risk_prior
+```
+
+No disruption is detected — the workflow exits after the exception detector with no
+action generated and no LLM calls made.
 
 </details>
 
@@ -461,19 +505,8 @@ Optional enhanced cost model:
 cost_predictor_enhanced.pkl
 ```
 
-To use the enhanced model:
-
-```bash
-export SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor_enhanced.pkl
-export SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_enhanced
-```
-
-On Windows PowerShell:
-
-```powershell
-$env:SUPPLY_CHAIN_COST_MODEL_FILENAME="cost_predictor_enhanced.pkl"
-$env:SUPPLY_CHAIN_COST_FEATURE_KEY="cost_model_features_enhanced"
-```
+The enhanced model is selected by default in `constants.py`. If it is missing,
+the agent falls back to `cost_predictor.pkl` with the agent-compatible feature set.
 
 ---
 
@@ -514,10 +547,28 @@ supply_chain_agent_training_outputs/reports/
 
 | Artifact | Purpose |
 |---|---|
-| `metrics.json` | Stores classifier and cost-model evaluation metrics |
+| `metrics.json` | Full model evaluation metrics, split design, data-quality summary, and final-test results |
+| `metrics_summary.csv` | Compact summary of the main classifier and regression metrics |
+| `data_quality_report.json` | Dataset validation checks and derived-label assumptions |
 | `classifier_feature_importance.csv` | Feature importance for the disruption classifier |
+| `active_exception_feature_importance.csv` | Feature importance for the active exception detector |
 | `agent_compatible_cost_feature_importance.csv` | Feature importance for the default cost model |
 | `enhanced_cost_feature_importance.csv` | Feature importance for the enhanced cost model |
+
+Current final-test metrics:
+
+| Model | ROC-AUC | PR-AUC | Precision | Recall | F1 | Accuracy | MAE | WAPE | RMSLE | R2 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Disruption classifier | 0.574 | 0.158 | 0.195 | 0.265 | 0.225 | 0.769 | - | - | - | - |
+| Active exception detector | 0.999 | 0.997 | 0.996 | 0.993 | 0.994 | 0.999 | - | - | - | - |
+| Agent-compatible cost model | - | - | - | - | - | - | $5,932.63 | 49.69% | 0.944 | 0.636 |
+| Enhanced cost model | - | - | - | - | - | - | $1,899.47 | 15.91% | 0.291 | 0.903 |
+
+The disruption classifier is a leakage-safe early-warning model. It uses pre-event risk features and is intentionally treated as a risk prior rather than a hard execution trigger. Its lower metrics reflect the harder task of predicting disruption risk before obvious delay or delivery-status signals are available.
+
+The active exception detector answers a different operational question: whether a shipment is already in an exception state. It uses observed post-departure signals such as `observed_delay_days`, `delivery_status_late`, `Actual_Lead_Time_Days`, and `delay_ratio`. Because those features directly describe current shipment status, its metrics are much higher and should not be compared directly with the leakage-safe disruption classifier.
+
+The enhanced cost model is the preferred cost predictor. It substantially improves over the agent-compatible baseline, reducing WAPE from 49.69% to 15.91% and improving R2 from 0.636 to 0.903.
 
 These files summarize model performance and feature importance for the trained XGBoost models.
 
@@ -651,6 +702,90 @@ Recommended further additions for full production:
 > Built a LangGraph multi-agent pipeline for supply-chain disruption resolution, combining RAG with FAISS, HuggingFace embeddings, Groq LLMs, and Pydantic structured outputs across risk assessment, mitigation planning, cost evaluation, and HITL approval.
 >
 > Trained XGBoost classifier and cost regressor on 10K shipment records for disruption detection and shipping-cost prediction, with separated training and inference artifacts for production-style deployment.
+
+---
+
+## Running Tests
+
+The project includes a `pytest` suite in `tests/`. It does not require a real Groq API
+key or loaded models — all I/O is mocked.
+
+```bash
+pip install pytest httpx
+pytest tests/ -v
+```
+
+| Test file | What it covers |
+|---|---|
+| `tests/test_constants.py` | Business-rule sanity checks (multipliers, risk maps, thresholds) |
+| `tests/test_feature_engineering.py` | Feature engineering, action normalisation, temporal features, `enrich_order` |
+| `tests/test_api.py` | FastAPI endpoints (health, ready, resolve, feedback) via `TestClient` |
+
+---
+
+## Troubleshooting
+
+**`InconsistentVersionWarning: Trying to unpickle estimator from version 1.6.1 when using version X.Y.Z`**
+
+The pickled model files were created with `scikit-learn 1.6.1`. If you installed a newer
+version, this warning appears on every startup and may cause incorrect predictions.
+
+Fix: `pip install scikit-learn==1.6.1` (already pinned in `requirements.txt`) or retrain
+the models under your target scikit-learn version and update the pin.
+
+---
+
+**`ModuleNotFoundError: No module named 'dotenv'`**
+
+```bash
+pip install python-dotenv
+```
+
+---
+
+**`FileNotFoundError: Missing disruption classifier …`**
+
+The model `.pkl` files are not checked in to the repository. Run the training notebook
+first:
+
+```bash
+jupyter notebook notebooks/supply_chain_disruption_cost_model_training.ipynb
+```
+
+Then run the artifact check:
+
+```bash
+python supply_chain_genai_agent_groq_hf.py check
+```
+
+---
+
+**`FAISS index not found`**
+
+Build the index once after cloning (or after changing the playbook):
+
+```bash
+python supply_chain_genai_agent_groq_hf.py index
+```
+
+---
+
+**`HuggingFace download error` in Docker / air-gapped environment**
+
+The Dockerfile pre-downloads `sentence-transformers/all-MiniLM-L6-v2` at build time and
+then switches to offline mode (`HF_HUB_OFFLINE=1`). If you see network errors at runtime,
+either rebuild the image or mount a pre-downloaded model cache.
+
+---
+
+**`GROQ_API_KEY` not found / LLM calls failing**
+
+Make sure you have a `.env` file with `GROQ_API_KEY=sk-...` in the project root, or that
+the variable is exported in your shell. Verify with:
+
+```bash
+python -c "import os; print(os.getenv('GROQ_API_KEY', 'NOT SET'))"
+```
 
 ---
 

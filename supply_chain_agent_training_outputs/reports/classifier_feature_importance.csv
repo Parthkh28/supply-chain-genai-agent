@@ -1,21 +1,27 @@
 feature,importance
-route_Suez,0.0642112
-mode_Sea,0.05607593
-geo_weather_interaction,0.056046102
-route_Atlantic,0.056026865
-route_Commodity,0.055821273
-composite_risk_score,0.054493196
-route_Intra-Asia,0.05383721
-Inflation_Rate_Pct,0.052945662
-Weather_Severity_Index,0.05229287
-product_Perishable Foods,0.05209978
-route_risk_score,0.05198679
-route_Pacific,0.05184491
-Geopolitical_Risk_Index,0.049702205
-product_Semiconductors,0.047781367
-product_Auto Parts,0.047444217
-Scheduled_Lead_Time_Days,0.047410794
-lead_time_buffer,0.04656405
-product_criticality,0.046125233
-product_Pharmaceuticals,0.04002108
-mode_Air,0.017269261
+lane_disruption_rate,0.067740634
+mode_Air,0.057746526
+route_Commodity,0.056709364
+mode_Sea,0.056261376
+route_Intra-Asia,0.051672563
+route_risk_score,0.049101647
+order_month,0.046696547
+order_quarter,0.045817472
+geo_weather_interaction,0.045273073
+route_Suez,0.04444654
+composite_risk_score,0.04380322
+is_typhoon_season,0.042836033
+Inflation_Rate_Pct,0.04061124
+Scheduled_Lead_Time_Days,0.038914785
+route_Atlantic,0.038532887
+product_criticality,0.038261637
+Geopolitical_Risk_Index,0.038084242
+product_Perishable Foods,0.036413092
+product_Semiconductors,0.035459027
+Weather_Severity_Index,0.03480161
+product_Auto Parts,0.03443324
+lead_time_buffer,0.02893718
+is_lunar_new_year_window,0.027446039
+route_Pacific,0.0
+product_Pharmaceuticals,0.0
+is_peak_shipping,0.0

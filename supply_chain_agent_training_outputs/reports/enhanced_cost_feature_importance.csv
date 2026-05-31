@@ -1,24 +1,29 @@
 feature,importance
-mode_Sea,0.62505245
-Scheduled_Lead_Time_Days,0.22012618
-Order_Weight_Kg,0.049556978
-Base_Lead_Time_Days,0.025934406
-route_Commodity,0.011770067
-Geopolitical_Risk_Index,0.009390611
-route_risk_score,0.007852357
-route_Suez,0.0076709273
-lead_time_buffer,0.007379957
-Weather_Severity_Index,0.00669296
-geo_weather_interaction,0.0059535974
-route_Intra-Asia,0.005389446
-mode_Air,0.0045289565
-route_Pacific,0.0035053669
-route_Atlantic,0.0027880769
-product_criticality,0.0025214087
-product_Pharmaceuticals,0.0024411588
-product_Semiconductors,0.0011886109
-product_Perishable Foods,8.720249e-05
-product_Consumer Electronics,8.229418e-05
-product_Textiles,4.2538803e-05
-product_Raw Materials,4.1187173e-05
-product_Auto Parts,3.2429307e-06
+mode_Sea,0.60614926
+Scheduled_Lead_Time_Days,0.20472953
+Base_Lead_Time_Days,0.101134256
+Order_Weight_Kg,0.029150683
+order_quarter,0.0060084076
+lead_time_buffer,0.0059464853
+route_Intra-Asia,0.0054948046
+Geopolitical_Risk_Index,0.004757719
+order_month,0.0045568743
+Weather_Severity_Index,0.0044688326
+route_Suez,0.0040781833
+is_typhoon_season,0.0040492937
+route_Atlantic,0.0037797878
+route_risk_score,0.003696049
+geo_weather_interaction,0.00342199
+product_Pharmaceuticals,0.002316495
+route_Pacific,0.0022775044
+product_criticality,0.0014634045
+is_lunar_new_year_window,0.000980691
+is_peak_shipping,0.0009255555
+product_Semiconductors,0.00045397817
+product_Perishable Foods,7.0641225e-05
+product_Auto Parts,4.335316e-05
+product_Consumer Electronics,3.203667e-05
+product_Textiles,1.4232459e-05
+product_Raw Materials,2.3874154e-11
+mode_Air,0.0
+route_Commodity,0.0

@@ -1,0 +1,15 @@
+feature,importance
+observed_delay_days,0.8443537
+raw_lead_time_delta_days,0.100263216
+lead_time_buffer,0.026716202
+Actual_Lead_Time_Days,0.00980902
+route_Suez,0.009039721
+Scheduled_Lead_Time_Days,0.005656407
+route_Intra-Asia,0.0041618063
+delay_ratio,0.0
+delivery_status_late,0.0
+mode_Sea,0.0
+mode_Air,0.0
+route_Pacific,0.0
+route_Atlantic,0.0
+route_Commodity,0.0

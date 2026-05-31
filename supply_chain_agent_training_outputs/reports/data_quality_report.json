@@ -1,0 +1,16 @@
+{
+  "row_count": 10000,
+  "column_count": 63,
+  "duplicate_order_id_count": 0,
+  "raw_delay_mismatch_rows": 8188,
+  "delay_policy_mismatch_rows": 0,
+  "event_but_on_time_rows": 49,
+  "late_without_event_rows": 72,
+  "negative_inflation_rows": 13,
+  "shipping_cost_p99_usd": 96326.77890000006,
+  "shipping_cost_max_usd": 206814.29,
+  "event_disruption_rate": 0.1267,
+  "late_delivery_rate": 0.129,
+  "active_exception_rate": 0.1339,
+  "note": "Delay_Days is interpreted as max(Actual_Lead_Time_Days - Scheduled_Lead_Time_Days, 0), not as raw arrival variance."
+}

@@ -173,3 +173,200 @@ Criticality Score    : 0.15
 Disruption Rate      : 14.2%
 Avg Delay (days)     : 1.0
 Avg Shipping Cost    : $3,920
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Hamburg, DE -> New York, US
+Disruption Type      : Port Congestion
+Best Action          : Expedited Air Freight
+Avg Delay (days)     : 2.9
+Avg Shipping Cost    : $43,252
+Sample Size          : 56 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Mumbai, IN -> Felixstowe, UK
+Disruption Type      : Geopolitical Conflict (Route Diversion)
+Best Action          : Re-routing
+Avg Delay (days)     : 12.9
+Avg Shipping Cost    : $5,917
+Sample Size          : 198 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Santos, BR -> Shanghai, CN
+Disruption Type      : Port Congestion
+Best Action          : Expedited Air Freight
+Avg Delay (days)     : 3.1
+Avg Shipping Cost    : $40,822
+Sample Size          : 37 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Shanghai, CN -> Los Angeles, US
+Disruption Type      : Port Congestion
+Best Action          : Standard Shipping
+Avg Delay (days)     : 2.9
+Avg Shipping Cost    : $4,387
+Sample Size          : 86 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Shanghai, CN -> Los Angeles, US
+Disruption Type      : Severe Weather (Typhoon/Storm)
+Best Action          : Standard Shipping
+Avg Delay (days)     : 5.4
+Avg Shipping Cost    : $4,754
+Sample Size          : 57 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Shenzhen, CN -> Rotterdam, NL
+Disruption Type      : Geopolitical Conflict (Route Diversion)
+Best Action          : Re-routing
+Avg Delay (days)     : 12.7
+Avg Shipping Cost    : $6,266
+Sample Size          : 170 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Tokyo, JP -> Singapore, SG
+Disruption Type      : Port Congestion
+Best Action          : Expedited Air Freight
+Avg Delay (days)     : 2.6
+Avg Shipping Cost    : $59,201
+Sample Size          : 33 orders
+
+---
+
+LANE-SPECIFIC MITIGATION RECORD
+Lane                 : Tokyo, JP -> Singapore, SG
+Disruption Type      : Severe Weather (Typhoon/Storm)
+Best Action          : Standard Shipping
+Avg Delay (days)     : 5.6
+Avg Shipping Cost    : $4,327
+Sample Size          : 70 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Intra-Asia
+Order Month          : 8
+Disruption Rate      : 25.4%
+Avg Delay (days)     : 1.5
+Sample Size          : 138 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Pacific
+Order Month          : 8
+Disruption Rate      : 24.3%
+Avg Delay (days)     : 1.4
+Sample Size          : 140 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Intra-Asia
+Order Month          : 7
+Disruption Rate      : 21.7%
+Avg Delay (days)     : 1.2
+Sample Size          : 138 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Intra-Asia
+Order Month          : 9
+Disruption Rate      : 18.8%
+Avg Delay (days)     : 1.0
+Sample Size          : 154 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 4
+Disruption Rate      : 18.1%
+Avg Delay (days)     : 2.4
+Sample Size          : 271 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 10
+Disruption Rate      : 17.6%
+Avg Delay (days)     : 2.3
+Sample Size          : 261 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Pacific
+Order Month          : 7
+Disruption Rate      : 17.2%
+Avg Delay (days)     : 0.9
+Sample Size          : 145 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 3
+Disruption Rate      : 16.4%
+Avg Delay (days)     : 2.1
+Sample Size          : 298 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 9
+Disruption Rate      : 16.1%
+Avg Delay (days)     : 2.2
+Sample Size          : 286 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 12
+Disruption Rate      : 15.9%
+Avg Delay (days)     : 2.1
+Sample Size          : 289 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Atlantic
+Order Month          : 12
+Disruption Rate      : 15.3%
+Avg Delay (days)     : 0.3
+Sample Size          : 124 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Suez
+Order Month          : 1
+Disruption Rate      : 15.3%
+Avg Delay (days)     : 2.1
+Sample Size          : 294 orders
+
+---
+
+SEASONAL RISK RECORD
+Route                : Pacific
+Order Month          : 9
+Disruption Rate      : 15.2%
+Avg Delay (days)     : 0.8
+Sample Size          : 132 orders

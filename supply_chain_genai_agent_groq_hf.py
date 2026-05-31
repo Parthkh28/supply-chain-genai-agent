@@ -18,13 +18,14 @@ Expected artifact layout, either next to this file or configured by environment 
       feature_config.json
     knowledge_base/
       mitigation_playbook.txt
-      faiss_index/              # created by: python supply_chain_genai_agent.py index
+      faiss_index/              # created by: python supply_chain_genai_agent_groq_hf.py index
 
 Optional environment variables:
   SUPPLY_CHAIN_MODELS_DIR       - directory containing model .pkl files and feature_config.json
   SUPPLY_CHAIN_KB_DIR           - directory containing mitigation_playbook.txt/faiss_index
   SUPPLY_CHAIN_DATA_PATH        - CSV path used only for local demo resolve mode
-  GROQ_MODEL                    - defaults to llama3-70b-8192
+  GROQ_MODEL                    - defaults to llama-3.3-70b-versatile
+  GROQ_FALLBACK_MODEL           - optional second Groq model for fallback retries
   GROQ_API_KEY                  - required for Groq LLM calls
   SUPPLY_CHAIN_REPLAY_MODE      - set to 1 only when replaying historical CSV rows
 """
@@ -42,10 +43,46 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
+# Load .env in local development before any env-var reads take effect.
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 import joblib
 import numpy as np
 import pandas as pd
 from pydantic import BaseModel, Field
+
+from constants import (
+    ACTION_ALIASES,
+    CONFIDENCE_THRESHOLD,
+    COST_DELTA_THRESHOLD,
+    COST_MULTIPLIERS,
+    DATA_PATH,
+    DEFAULT_CLASSIFIER_FEATURES,
+    DEFAULT_COST_FEATURE_KEY,
+    DEFAULT_COST_MODEL_FEATURES,
+    DEFAULT_COST_MODEL_FILENAME,
+    DEFAULT_DISRUPTION_PROB_THRESHOLD,
+    DEFAULT_ENHANCED_COST_MODEL_FEATURES,
+    DEFAULT_GROQ_MODEL,
+    DEFAULT_OUTPUT_DIR,
+    DEFAULT_PRODUCT_CRITICALITY_MAP,
+    DEFAULT_ROUTE_RISK_MAP,
+    DISRUPTION_LABEL_MAP,
+    KB_DIR,
+    LEAKAGE_PRONE_FEATURES,
+    LEGACY_COST_FEATURE_KEY,
+    LEGACY_COST_MODEL_FILENAME,
+    MODELS_DIR,
+    NO_DISRUPTION_VALUES,
+    ROOT,
+    UTILITY_ALPHA,
+    UTILITY_BETA,
+    VALID_ACTION_NAMES,
+)
 
 # Skip HuggingFace Hub network checks when the model is already cached locally.
 # On a fresh machine the model downloads once; every run after that is instant.
@@ -104,176 +141,6 @@ if not _LANGGRAPH_AVAILABLE:
 
 
 # ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
-ROOT = Path(__file__).resolve().parent
-
-
-def _first_existing_dir(*candidates: Path) -> Path:
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
-    return candidates[0]
-
-
-DEFAULT_OUTPUT_DIR = ROOT / "supply_chain_agent_training_outputs"
-MODELS_DIR = Path(
-    os.getenv(
-        "SUPPLY_CHAIN_MODELS_DIR",
-        str(_first_existing_dir(DEFAULT_OUTPUT_DIR / "models", ROOT / "models")),
-    )
-)
-KB_DIR = Path(
-    os.getenv(
-        "SUPPLY_CHAIN_KB_DIR",
-        str(_first_existing_dir(DEFAULT_OUTPUT_DIR / "knowledge_base", ROOT / "knowledge_base")),
-    )
-)
-DATA_PATH = Path(
-    os.getenv("SUPPLY_CHAIN_DATA_PATH", str(ROOT / "global_supply_chain_disruption_v1.csv"))
-)
-
-
-# ---------------------------------------------------------------------------
-# Default config fallback. In normal use, feature_config.json from the Kaggle
-# notebook should override these values.
-# ---------------------------------------------------------------------------
-DEFAULT_DISRUPTION_PROB_THRESHOLD = 0.35
-
-DEFAULT_ROUTE_RISK_MAP: dict[str, float] = {
-    "Suez": 0.91,
-    "Pacific": 0.74,
-    "Atlantic": 0.58,
-    "Intra-Asia": 0.45,
-    "Commodity": 0.28,
-}
-
-DEFAULT_PRODUCT_CRITICALITY_MAP: dict[str, float] = {
-    "Pharmaceuticals": 1.00,
-    "Perishable Foods": 0.95,
-    "Semiconductors": 0.70,
-    "Consumer Electronics": 0.55,
-    "Auto Parts": 0.50,
-    "Raw Materials": 0.25,
-    "Textiles": 0.15,
-}
-
-DISRUPTION_LABEL_MAP: dict[str, int] = {
-    "No Disruption": 0,
-    "Port Congestion": 1,
-    "Geopolitical Conflict (Route Diversion)": 2,
-    "Severe Weather (Typhoon/Storm)": 3,
-}
-
-NO_DISRUPTION_VALUES = {
-    "",
-    "none",
-    "nan",
-    "no disruption",
-    "no_disruption",
-    "no-disruption",
-    "null",
-}
-
-# Production-safe default: only pre-event features. If feature_config.json is present,
-# the active training feature list from the notebook overrides this fallback.
-LEAKAGE_PRONE_FEATURES = {"delay_ratio", "Shipping_Cost_USD", "log_shipping_cost", "cost_percentile"}
-
-DEFAULT_CLASSIFIER_FEATURES: list[str] = [
-    "Geopolitical_Risk_Index",
-    "Weather_Severity_Index",
-    "Inflation_Rate_Pct",
-    "Scheduled_Lead_Time_Days",
-    "lead_time_buffer",
-    "composite_risk_score",
-    "geo_weather_interaction",
-    "route_risk_score",
-    "product_criticality",
-    "mode_Sea",
-    "mode_Air",
-    "route_Suez",
-    "route_Pacific",
-    "route_Atlantic",
-    "route_Intra-Asia",
-    "route_Commodity",
-    "product_Pharmaceuticals",
-    "product_Perishable Foods",
-    "product_Semiconductors",
-    "product_Auto Parts",
-]
-
-DEFAULT_COST_MODEL_FEATURES: list[str] = [
-    "Geopolitical_Risk_Index",
-    "Weather_Severity_Index",
-    "Scheduled_Lead_Time_Days",
-    "route_risk_score",
-    "product_criticality",
-    "mode_Sea",
-    "mode_Air",
-    "geo_weather_interaction",
-    "route_Suez",
-    "route_Pacific",
-    "route_Atlantic",
-]
-
-DEFAULT_ENHANCED_COST_MODEL_FEATURES: list[str] = [
-    "Geopolitical_Risk_Index",
-    "Weather_Severity_Index",
-    "Scheduled_Lead_Time_Days",
-    "Base_Lead_Time_Days",
-    "lead_time_buffer",
-    "Order_Weight_Kg",
-    "route_risk_score",
-    "product_criticality",
-    "geo_weather_interaction",
-    "mode_Sea",
-    "mode_Air",
-    "route_Suez",
-    "route_Pacific",
-    "route_Atlantic",
-    "route_Intra-Asia",
-    "route_Commodity",
-    "product_Pharmaceuticals",
-    "product_Perishable Foods",
-    "product_Semiconductors",
-    "product_Auto Parts",
-    "product_Consumer Electronics",
-    "product_Raw Materials",
-    "product_Textiles",
-]
-
-COST_MULTIPLIERS: dict[str, float] = {
-    "Expedited Air Freight": 12.5,
-    "Re-routing": 1.6,
-    "Standard Shipping": 1.0,
-    "Delay Accepted": 1.0,
-}
-VALID_ACTION_NAMES = tuple(COST_MULTIPLIERS.keys())
-ACTION_ALIASES: dict[str, str] = {
-    "air freight": "Expedited Air Freight",
-    "airfreight": "Expedited Air Freight",
-    "expedite": "Expedited Air Freight",
-    "expedited": "Expedited Air Freight",
-    "reroute": "Re-routing",
-    "rerouting": "Re-routing",
-    "re-route": "Re-routing",
-    "partial re-routing": "Re-routing",
-    "alternative route": "Re-routing",
-    "standard": "Standard Shipping",
-    "normal shipping": "Standard Shipping",
-    "continue": "Standard Shipping",
-    "accept delay": "Delay Accepted",
-    "delay accepted": "Delay Accepted",
-    "wait": "Delay Accepted",
-}
-
-CONFIDENCE_THRESHOLD = 0.60
-COST_DELTA_THRESHOLD = 50_000.0
-UTILITY_ALPHA = 0.60
-UTILITY_BETA = 0.40
-
-
-# ---------------------------------------------------------------------------
 # Load feature config generated by the training notebook.
 # ---------------------------------------------------------------------------
 def load_feature_config(models_dir: Path = MODELS_DIR) -> dict[str, Any]:
@@ -318,16 +185,14 @@ if _leaky_active_features:
         _leaky_active_features,
     )
 
-# Default to the enhanced cost model (R²=0.89) for substantially better accuracy than
-# the agent-compatible model (R²=0.60). To force the legacy model, set:
-#   SUPPLY_CHAIN_COST_MODEL_FILENAME=cost_predictor.pkl
-#   SUPPLY_CHAIN_COST_FEATURE_KEY=cost_model_features_agent_compatible
-COST_MODEL_FILENAME = os.getenv("SUPPLY_CHAIN_COST_MODEL_FILENAME", "cost_predictor_enhanced.pkl")
-COST_FEATURE_KEY = os.getenv("SUPPLY_CHAIN_COST_FEATURE_KEY", "cost_model_features_enhanced")
+# Default to the enhanced cost model selected in constants.py. If that artifact is
+# missing, load_cost_predictor() falls back to the legacy agent-compatible model.
+COST_MODEL_FILENAME = DEFAULT_COST_MODEL_FILENAME
+COST_FEATURE_KEY = DEFAULT_COST_FEATURE_KEY
 COST_MODEL_FEATURES: list[str] = list(
     FEATURE_CONFIG.get(COST_FEATURE_KEY, DEFAULT_COST_MODEL_FEATURES)
 )
-if COST_FEATURE_KEY == "cost_model_features_enhanced" and not FEATURE_CONFIG.get(COST_FEATURE_KEY):
+if COST_FEATURE_KEY == DEFAULT_COST_FEATURE_KEY and not FEATURE_CONFIG.get(COST_FEATURE_KEY):
     COST_MODEL_FEATURES = DEFAULT_ENHANCED_COST_MODEL_FEATURES
 
 ALL_EXPECTED_FEATURES = sorted(
@@ -782,14 +647,15 @@ def load_cost_predictor():
 
     # Graceful fallback: if the enhanced model is missing, drop back to the legacy
     # model + its feature list so the agent still runs end-to-end on partial artifacts.
-    fallback = MODELS_DIR / "cost_predictor.pkl"
-    if COST_MODEL_FILENAME != "cost_predictor.pkl" and fallback.exists():
+    fallback = MODELS_DIR / LEGACY_COST_MODEL_FILENAME
+    if COST_MODEL_FILENAME != LEGACY_COST_MODEL_FILENAME and fallback.exists():
         logger.warning(
-            "Cost predictor %s not found. Falling back to cost_predictor.pkl with the agent-compatible feature set.",
+            "Cost predictor %s not found. Falling back to %s with the agent-compatible feature set.",
             primary,
+            LEGACY_COST_MODEL_FILENAME,
         )
-        COST_MODEL_FILENAME = "cost_predictor.pkl"
-        COST_FEATURE_KEY = "cost_model_features_agent_compatible"
+        COST_MODEL_FILENAME = LEGACY_COST_MODEL_FILENAME
+        COST_FEATURE_KEY = LEGACY_COST_FEATURE_KEY
         COST_MODEL_FEATURES = list(
             FEATURE_CONFIG.get(COST_FEATURE_KEY, DEFAULT_COST_MODEL_FEATURES)
         )
@@ -962,7 +828,7 @@ def get_llm():
 
     api_key = os.getenv("GROQ_API_KEY")
     primary = ChatGroq(
-        model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        model=os.getenv("GROQ_MODEL", DEFAULT_GROQ_MODEL),
         temperature=0,
         max_retries=2,
         api_key=api_key,
@@ -992,6 +858,8 @@ if _LANGGRAPH_AVAILABLE:
     class SupplyChainState(TypedDict, total=False):
         order: dict
         order_id: str
+        # Per-request flag so concurrent API calls don't race on os.environ.
+        replay_mode: bool
 
         disruption_detected: bool
         disruption_probability: float
@@ -1040,7 +908,9 @@ if _LANGGRAPH_AVAILABLE:
         probability = float(classifier.predict_proba(features)[0][1])
 
         raw_event = state["order"].get("Disruption_Event")
-        replay_mode = is_replay_mode_enabled()
+        # State-level flag takes precedence over env var so concurrent API requests
+        # with different replay_mode values don't interfere with each other.
+        replay_mode = bool(state.get("replay_mode", is_replay_mode_enabled()))
         rule_hit = has_disruption_event(raw_event) if replay_mode else False
         normalized_event = normalize_disruption_event(raw_event)
         if rule_hit:

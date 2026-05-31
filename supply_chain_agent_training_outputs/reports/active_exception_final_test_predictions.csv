@@ -1,0 +1,2001 @@
+Order_ID,lane,is_event_disruption,is_late,is_active_exception,predicted_probability,predicted_label
+ORD-2E19D1EC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E7870B18,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1719882C,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-671246DC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-5166583E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-DE13FF8F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-43977629,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-25BBAB1E,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-865BFE52,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-FA8615E9,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-4344BE66,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-67272409,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-00C78795,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BF2FD963,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-AC2EB87A,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-D136D9CB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-451EB633,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D29C4A80,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-AE47BD6B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A1615913,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-AA591AA6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-C5AEE071,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-4EFD10D8,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8492B8EE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D31C1CCE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-89ED84FB,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-72B7BAA3,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-AAD30829,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-87C33BFB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-492E5C1B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8517EFCE,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-D6BF9F4E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-7FB49F05,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-D423D116,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-03AD3779,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-489C306E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B511D57B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-0ED6F4A3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2D0A91A3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5757886A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-66EEA017,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E8C993F9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-9FC80C48,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-7761EAE6,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-C4410709,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5047258C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-F92A019D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-54078790,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-53D34AF0,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-9CCD9444,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-EDB8F188,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-01DF905F,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-3D3D85CB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A3167046,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-7806DFEA,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-ADA59628,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-24D65C7E,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-BB4586DF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-57FA03E9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-73A90423,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-9025F9D4,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-3F216C60,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7F2BE8BC,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-036B83C0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F7882B23,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-46C3A73E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-1B56E0C8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-8D988892,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-BE2F9691,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0D140FA3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-38CDFC87,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DA7F2CBD,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-82A863BC,"Hamburg, DE -> New York, US",0,0,0,0.43887705,0
+ORD-0D5C9A7B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-CDDBDED0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E3A71068,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D4C4E625,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-7D38D629,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-8F8CDA90,"Santos, BR -> Shanghai, CN",0,1,1,0.7280483,1
+ORD-64B4CCBB,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-090E404D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-42251760,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-C87860AB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-CDFFD9CF,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-F3C3EADD,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-44E8870A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7EB96431,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-48C22109,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-75944C55,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CA073F5E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-9B796FE7,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-B4FAD219,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DD5EE776,"Mumbai, IN -> Felixstowe, UK",0,1,1,0.7280483,1
+ORD-57BF8902,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-8218DFC5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-3DF13A61,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-41BE0895,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-3521BA69,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B711F108,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-7ECEC61E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2F766E5A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-3658F710,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-E4525E1B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-091612BF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-72997A03,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-6241ABCD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F825558D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C8E2392D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-AB7BC485,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-92529A5A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-3120F356,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-89AAA167,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-8EE24EDD,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4B917A46,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-68E185F3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CAB28724,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-DA9B6D3C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C5954912,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-363A1945,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-35759891,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-5510C66D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-591B26B3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BABD60A9,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B209CB91,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2A30942C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-5F9611B3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CA297E2F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4AD3E9DC,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-E3566839,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-8D9B0CF8,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-4BB6E521,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-D75B16C4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A7161BDC,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4452CB53,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-5931239C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-833AA696,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F8F23E4B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-1DCB9AFE,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-A4F37DAB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-06640CEC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6B46D33F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-45D885A1,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-7C556322,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-346E2A49,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-3BC790FF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-AD30F7C2,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-3589BD6F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1DA461BA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-50107DBF,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-E4B26A37,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5E827C17,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A76FF0D0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-9653AA28,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-5F2C019A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-EBC11EB2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4FAE28B5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-7766AC4B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-33984CDF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5AC8AAF9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-899A8B36,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D43D4C94,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-79384561,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-CB4492E5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AB93D4D4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5E203D1C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-2915AD98,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-DA695C45,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-61496195,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-10322B1E,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-AEB11812,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-355B4862,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-054DDDA5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-67A6133A,"Santos, BR -> Shanghai, CN",1,0,1,0.59613776,1
+ORD-CEE3CA72,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B06192BF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A7729989,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-D1BFB9D0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-58731F4B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-F236265F,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-BDBB0686,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-15FA9E42,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-378D09BE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1AD1CD76,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-BF2E5423,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5E4B50A9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A87CCA76,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-6F7C3D5A,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-C630D998,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-3456C9F6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0D5F504D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DED09FC8,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-15233CCC,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-3C8CCE17,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-329FAB5E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-5062C8BD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-15E2B27E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-F441D255,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F761B364,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-E84B8F3F,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-74C6277C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E57FC24F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-7447E4B0,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-30FB40EE,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-E6D43A45,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3A327212,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8B5C8FD6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-5ED0D9D3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-7CFEFD74,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A506F9D8,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-59B54D4A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-CF3AED40,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-9923AAE5,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-20859603,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C67BCA6E,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-5A754695,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-FD649F30,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CCEEFF05,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-70D0253A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-18B7983E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E1097334,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1803DDD6,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-75AB8593,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A42C982D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-0C15695A,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-603E29BD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CD232BC1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-DCBBF086,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D14861A3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-331FA8C5,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-770B822D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-793BD2F3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-83425721,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4C7CD3A4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5A5B6A8B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B5C2F65A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F1D9478C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7DA6ED2A,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-8A269DBF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-EFDE94FF,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-42DAC3C6,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-75D1386B,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-0F160F62,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-5F4436A1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-9DD20064,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-B9AE59B8,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-48EC0496,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B2531094,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7DDC326A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-77E9C09C,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-DB389C5D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-49A8C06E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-06320EDF,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-D616DC67,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B9E5D95B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-DA1FF365,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CB411CF0,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E80F400F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-3C2E80B7,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-303A76C3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-E0ACCCA7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-B99A3227,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-CB878210,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-665D3435,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-EA42B9C1,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F00C5B4B,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-42B8F674,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E6B57529,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-E4C7D777,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-222FDC0C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F236D47C,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-2F132A82,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-FBC5C61D,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-80D8FE60,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-F189F9AA,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-0DC5244E,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-E3133EC4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-69082A31,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-F0E71099,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-83C764A5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-C5A4F441,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-4AAC2655,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-381AF8F6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-53A76E0D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-8D9D87CE,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-BA4FE8E9,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-71CD6D54,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-8EC471C2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-77EB8B76,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-FC81FBF2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-94D82DA0,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C529D9EB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-FF2711C8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E80CB324,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D0F9855B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8E364FFC,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5202AB39,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-5B94890E,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-61F54F21,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B6DEE29D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DBFD3B7E,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-362BFBF4,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-32F824CD,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3B708B48,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-ABE36C1C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-2515CD46,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-966699C9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E84D0895,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E136F28B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DA10D0C4,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-8C29F1F5,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-AD646D8D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-BA66193F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-B02E952A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-4016569A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-15E1170A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-BA2DF472,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2800DAF0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-779E6B90,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-73394C10,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-B6E4C1C5,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DB0AAB24,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-39C72C5E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-F0F8217E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C5CC32F1,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-8FE3D918,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-98E972E6,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-25F3CE95,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1DB3216C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3CE34420,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-5E48D359,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-5B041288,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-96B1DD13,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-D2E83D87,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-474DB996,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-5F777971,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-47EE1E79,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-253B989A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B6CB7E60,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CB98D49C,"Tokyo, JP -> Singapore, SG",0,1,1,0.7280483,1
+ORD-B4A9F349,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6DF13BBD,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2A8338BD,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-D7D87122,"Santos, BR -> Shanghai, CN",1,0,1,0.27682653,0
+ORD-69FA559E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E2435F4C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-497DDC91,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-337F10EB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-A1481514,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-F877DFF1,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-E13517EE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-38E31E12,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-5B21E9B7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-317D18B0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-98469526,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-2679D7FD,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-FBB2C30B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-6321FC70,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-25B64B1F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-8000AAE1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-F44B81EB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-0C3144D4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-6BE8695D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-62F6CA9E,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-CB09B9D7,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-DB4455A1,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BE695B0E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-375B4727,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-F7D73007,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-40B390D3,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-FBDB6D26,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-36B18BE1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-F09C62DC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-23E70DAE,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-A60E0F67,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E88F99ED,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-65FEAAB1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-AC002211,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-7CD58BCF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-9984D52C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4DFCBAF5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-60B324EE,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-909C0E25,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-E2C4BC8C,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-67B78747,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-2D5CA6A9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C25DFBF1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-60F1E11B,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-9D4ED698,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4B3B55FD,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-C74F40F6,"Hamburg, DE -> New York, US",0,0,0,0.43887705,0
+ORD-115BF063,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4CDAF7AA,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A81756F6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-861BF0BA,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-F98CBE54,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-36C7F4F0,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-89E06373,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-72B6F094,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-F4F2CE65,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C37E3A38,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BFD3F3A5,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3034D646,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2FA791A8,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-92B161BB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-84F490AC,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-17CB5B82,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-414AD426,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3D01C5E3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-0B8D14B5,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B656E67E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7577421F,"Hamburg, DE -> New York, US",1,0,1,0.59613776,1
+ORD-86E076D4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-D74D8442,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-16AC4A22,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2D7CBE58,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BE39B625,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-45A4F48D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-0381B5BF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-C6A81D87,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-F44BA0D0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-4FE82B9B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-474E1693,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A70029C7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-BAB9A731,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-5744B9B7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-CBE57C49,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-F14DCAB2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-C19366E7,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DD65ECD2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-B2F82757,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-25962C47,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-742003E4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9D30590E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BCEEA806,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-AABD86DB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-85E00FEB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-E294B11C,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-FEA45D53,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1427EEAE,"Mumbai, IN -> Felixstowe, UK",0,1,1,0.7280483,1
+ORD-BFB2339C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-E78ECDEB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-C4272E56,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9A02DEF5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A238835D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-92EFB46A,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-82ADE6B6,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-F3A710AB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-9D532F6C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C816833D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1F313A87,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-3C5C3A7D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E1BB728F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-0F3CCA3B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-6FD5A254,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-EC523F79,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-BF48ED91,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E6DE3A45,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-A6AFCCDF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AA1F0353,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CB4657BA,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-010D0E1E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-C080E5B3,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-E99606B7,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-63157636,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-90D3ED81,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-65C84A05,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-1A499445,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-66085F6D,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-6F2F067B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-62B4D7E3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-19F82CCE,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-E88807C8,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-371653A8,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F33BE2B2,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-CDAB2162,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2533CA9E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-50EF2313,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-61C21D32,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-DD3BDE2A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BAC1AD04,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-E76E879E,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-4052DA06,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-9A9D0A7F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7F738AE3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D7A187FF,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1EC4EB98,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-61047724,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-DDAE63B6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-70163B2B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F6D809AD,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-24F8E5C6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-B7163F2D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-BF35E60B,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-BD7F9312,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-55ABB92F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-C1AAE714,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-FB7BF992,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-E4535EC8,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-F57C2A21,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C9EA660E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6B45CD87,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-2D212074,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C82BDFCD,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-BF077D62,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-73E9E3CE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-59FCD551,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-2BDAF404,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1B1F0235,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-FFC124B7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-6D256F5E,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-AF327ABF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-48E97C50,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-F95FA04A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-1967C236,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-61470CE8,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-FAD3D2B8,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-85F69FB4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-6C1A4371,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-140BEE37,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5785418F,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-68234E49,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-051511E0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-4F9D6F22,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-6D2B1FE3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-59A4A4A3,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-4630BFDC,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-A752C842,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0BCF3075,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-D05A723B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D53ECE0B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7C0A4D57,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-541CD3FA,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-8741C6DE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A8B6C572,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-65BC67DF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-CA23E1CD,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2E325182,"Hamburg, DE -> New York, US",1,0,1,0.59613776,1
+ORD-E58BDBB2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-0A6FC860,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A34DAF7B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-04ECB69E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-45C46D34,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-A223F099,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-488C7805,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-2D90ADB1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5AC056BA,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-4350B1A5,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-2A250880,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A948025B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6EC89B92,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-EA9B0AEA,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-37BA71D2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-DB80B534,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-B375C262,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A72964E9,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-6B146C46,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-0C5FF02D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-60340928,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-ADAA2F59,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-7DE7E8C1,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-78570E75,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-CC862732,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1C9E34D0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4F0BEA70,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-768BA231,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-6597A1AA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-0C4D44BF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-369B4BEE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A1C37847,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-1897A39F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-DC6314CF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8117F32B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-85679909,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7DAEBB1C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-7E573864,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C291F5D3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-8C2ACFC6,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-942CAD85,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-29382830,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E064EB33,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1A44222E,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-B3927DAF,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A3215294,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-3E0EA7B7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-659F094A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-1A2E33C2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-A9ABBEE0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2360B95A,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-6A54863F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-9D274126,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-85D38B24,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-3FD2B3F0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4D27F5C6,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5F3F312F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7CFD1921,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-BE6E8C98,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-8987BF26,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2FA631C2,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-6356A496,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E63F3E5F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-8A6E1B58,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-A41B7CB3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-FE2C6B98,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-350C2980,"Shanghai, CN -> Los Angeles, US",0,1,1,0.7280483,1
+ORD-737E11F1,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-924B5D82,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-266FB314,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-8AAF9994,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-FDCFA67A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-EDA99652,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-93A05408,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-03BEBEED,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-CB5DA106,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-AD47A363,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-7F7B0948,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C28A7ABC,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7DA46957,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-41840FF3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-7F21B116,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6D66DFBA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-AF904AA7,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-77040900,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3F95EB10,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-284BD1FF,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-13D04D86,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-5A99CFD0,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-7C9AF5D7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-BC253070,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-B8393025,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-8C442501,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-E04E4D3F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D67AF711,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1F4D24E7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-4C28CF79,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-79EA9206,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7DA6B134,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-FBE4BE70,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-27A7FC77,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-27C1724F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-0B7E1568,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E0DAE87D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-9022C946,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-DAF43019,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8610FB12,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CAAAD6DA,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-585E0D8A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-DA0B9B24,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-B62906B3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7914C3BF,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D17FF8E4,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-CD1C460D,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-C17B6F56,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-0E571673,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-38917DA7,"Hamburg, DE -> New York, US",1,0,1,0.59613776,1
+ORD-8A59D78E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2A698295,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-0812B134,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-08CADB7B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A10BA3A0,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-9F083EFC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-9F1773FE,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-21F9F812,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-05CB7378,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-50314010,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-03381380,"Mumbai, IN -> Felixstowe, UK",0,1,1,0.7280483,1
+ORD-C510A95E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-15F0C40F,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-7209B1CF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-02F57514,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E05BDC9D,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-96A83EC8,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-B3610134,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-712E4721,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-56FE8673,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-BDB9D3A3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E7D391EC,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-90E48766,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-C23921B4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3A3E16E4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3E592D25,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E566CC15,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-99361311,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-7CFD1154,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-51C0BA90,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-227DB943,"Hamburg, DE -> New York, US",1,0,1,0.43887705,0
+ORD-624A4431,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-29795355,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-09C90E84,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9ED99E5A,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-7FCDE649,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-64460942,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-9F232C79,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-6B671F77,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A9474367,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-81959506,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F808E599,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-1B5E8BF2,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-6C8ABC3D,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-CA67192C,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-EFE92545,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-AC307BF6,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-ECA8B081,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-E8807B27,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CF899492,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-BEB659A5,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6EF19652,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-1A409274,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B8FED3E5,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A07889FA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7FF72F71,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-62E480E7,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-16D7B45F,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-6402E6D7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-55F3776C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-AEDE0C1A,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-B94B5797,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8269EA1D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8FB80EAE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8639803A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-554FC5EA,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-F3D249C7,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-0E2F6723,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-FE4263BE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4464FA7C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5E98F94B,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-B8D94390,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-DA464454,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-43B1EB11,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-DC2E4342,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A27B986F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-D6068D37,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4BA152A3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A35ED349,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-BD9EA8AB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-00BCE790,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B3FB9AE7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2B147CF3,"Santos, BR -> Shanghai, CN",1,0,1,0.6658897,1
+ORD-E07D77A4,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-DE860A4C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-68B01599,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-113CD5AB,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-E111664D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-C2D645C8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-240D051C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-9FE4E511,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5A3130A6,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-28AE570B,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-AB85A647,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8C1D1750,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-80A68594,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D0E75977,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-27C1C4C7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-31784951,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-264BF249,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B6ED4E68,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-516926D6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-06EE9C09,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-08F28FB7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-635E1724,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-78057494,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-05170577,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5B8EC2DD,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-AA52CC0A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-57314C43,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-415D3B08,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-1B80676B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-117F0688,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-1DF97CB3,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F76C7734,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-C45F73EB,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1627F64A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-58A09E68,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-ECF3C979,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-6A155AA1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1186ED2D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F77DF96C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A23071E7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2C834F93,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-404ACEC2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4B2ADA48,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-A5B37742,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-BA6A2760,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4F3B8C55,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-AB1BC102,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-430C08C5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-42159C50,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-11B78C61,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-6B5F5939,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5EA36B01,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D6960522,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-CDD21951,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-3AD57C7B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-791F7A6B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-C3AA64F1,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-017C7796,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-1EDCE32B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-BA2B258F,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-9805E7F7,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F0191659,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-DC11B3C5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F720492A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7156CF4C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C7E53B89,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4B87BC7A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-452C35F4,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-320688F2,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E6F0B714,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-521AE272,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-ABBDEF6A,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-29E9B1F0,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-642D1D82,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-61E171D1,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-32757F41,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9FC5EB0A,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-2401FF7A,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-FAA85EF7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2AC5BAC3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-AA0340BE,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D549F490,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A5F10210,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-30F14F89,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5F8C138E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4B6D96ED,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-A6436EE3,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-18016D78,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-78B4A330,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-62E63A82,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-1403B87E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-148287EF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-714D1E56,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-CEF124DD,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8FDD2F3C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3C588956,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-86B72C2E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E33AFA7E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-88F12DED,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8201FA96,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D36034AB,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5D1AAEB3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-26150883,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-82210238,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-7832FC20,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-BCD9AFDA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-240BB565,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-87898B8A,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-64E46F11,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A5C52E5D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-02BAF523,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5380592D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9385551D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C420DFAB,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B28F1A97,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-9469714C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-4A267CB9,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C3A94403,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-99F1A7B9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-F8FF78C9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-B500B5EA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-3B5E0382,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A45183E3,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-2C3FC801,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-212CD4CF,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F25D8845,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-814A5490,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-6F92A7AF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3CB1907D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-FCBE7C07,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7FC69017,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-FC3DC24A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-015D2C77,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-E2E22006,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A41277AE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-44AF5E55,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8DD109E1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B4AFCEB1,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-AFC788E7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-3CCA650A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-513688A5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-71A80657,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9021083F,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-28BFDE67,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-AEDC9D6F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5BD44DF7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1F4690E5,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-CF7E7C64,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-EE765963,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4B4844D4,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-3C91B0DF,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-10D13AA5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2E0FF2BF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-15745702,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-8FDCEF8C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E827BC3C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-037E2EBB,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-66F8F7C0,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B77614C8,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7F857A7E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E6027677,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-7E86C8B9,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C5A91F73,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-686949B4,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-8E7F22A3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.42114022,0
+ORD-B47F32DC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-26726BC0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A389129A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-01053A20,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-34D35F15,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5E6217B8,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-92217F0F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-1BD5CC16,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-3ADACA13,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DF0BA39D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-00E0A115,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7CDCBF52,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-A6056199,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E283ECBD,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-E7D5E16C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B89E0A5B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-AD71613B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-7670234F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A14FCD06,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-CB2CE8E2,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-11B03BCB,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-46FC44C9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-939B7445,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A974F045,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-C4464AEC,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D13DBD01,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F94CF949,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-9818A813,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-308DD6E9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-025872BE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-4A5AB753,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-40F5374D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-8B78A10F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8C57C3EE,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-63BD0B57,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-E603652C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-92FDB798,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-78C1ADA3,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-D629684A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-18BC83D4,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-07C3F75B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-29733855,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-55777A2F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-273CD59A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-65CBCE5F,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8A4CFA01,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-60DB2D16,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2AE551B3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-2D931DE3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-7539D247,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-66E43AEA,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-F8B6BCE3,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-69C10241,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1A543E40,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-470AC00F,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-D56A149D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2BCCBF86,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-CFA4DFC1,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-0A83C3AF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-C5E00F65,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-39881233,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-12BCA098,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-665D229E,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-F23F8AA9,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-139E19AC,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-D37DCFB1,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-1446F61F,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-92DB3A62,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-73EE24C3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E48114D9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-AAD51ADF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2B5B7166,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-EF09DFCF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-9E6B3255,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-A8690728,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-54F2155A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DFD6CC82,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A1CFD1AE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8D4EFC6E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C3AAF8F3,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E3F7839B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-4A0649B6,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-89F97FBC,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D6BAE812,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-422982A8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-BDD42E6D,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-EFADE5B7,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-6BA2FC2E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CCE767E4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1FC6F3AB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-8456359E,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-D830D8A2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4167B623,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3E485E0C,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-500E4554,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-3DC240F9,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-16919CF2,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-E6F061C8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-41A87E07,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-499226AD,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-8CB9AD31,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-101FB8F2,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-397199BE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-A4E11778,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-FCFDEBDA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-36987D20,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-49B6F1AA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-14A6B4D0,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-BA80B65B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7AE65A6F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-19BBBEF3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-175B5DD6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-5E465028,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-ACE98795,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3E41BD08,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-9BE71D14,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-1C139AE7,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-92D109C4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-6074A1BF,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-1CF280A4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-CB6D2898,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-6E97EB31,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A2D41863,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-19524B22,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-2F9347CA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-BF8AF74F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-614CEE3B,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-161A7E3B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B2CC5AE6,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-593EFA42,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-5D7A5AAB,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-6897C175,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-5DAD8401,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-A0AAF87B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-54071318,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-0C1D0710,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-F6906223,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-4768EB86,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-74A7FDCB,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-4A0C8CD0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-60D000B7,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-DED1B1D3,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-ABADE781,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F5BD32F8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-E09B1140,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-EC4EA7BE,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AA47C39D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-9F46E67F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-72464388,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-94F84EA9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6F245216,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-BB4D5771,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2B6EDE03,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9DF85F9B,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-9F3C8EC2,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-E942A6FD,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-6BE71706,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4C73C8A1,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-F24E5874,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-32146122,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B36ABEF9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-63904CCF,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-CA6F55B5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-717054EE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-0C7DE81C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8611A7AB,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-07F3756E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-792D7E9A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-596582BB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F8ABE63F,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-579C48A4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DD62AC93,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-12F061B2,"Hamburg, DE -> New York, US",0,0,0,0.43887705,0
+ORD-DCDB051A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A32F7481,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-22933C18,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-0C1BF65F,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B2C135BB,"Tokyo, JP -> Singapore, SG",0,0,0,0.61020815,1
+ORD-B0CABB7C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-76624AC7,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-C94891E5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-37A9BFB0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-D57A96D3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C3A097DD,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-4F7D5A42,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-6B9A430E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-DA1E3BEC,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-BE561ECE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-1FD7BF70,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-01A70793,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-0EF837A2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5B1183E2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-2F1ACB92,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-1F71A5C5,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-84F6536D,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-71FBE9CC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-22355E35,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CB5EA3A9,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-A1544957,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D985C092,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-F92D1F0E,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-D34CDBB1,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-62215F10,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4BF3F10F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E5B4CC33,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2408714F,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-E4490C7D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-92C6A93F,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-788D3B74,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-AECD52A7,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-EACC196E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-3B7E42BF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-8BE1CADE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-CBABFD70,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-5C7DB5AB,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-7F9E9729,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-FE37EF42,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-0057B5C3,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-8CEA35E0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-F27A136B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-8916B51E,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-C91DAED9,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-E61F02EE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-301587A1,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-D4A0A125,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-CAFC0545,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-BCAAC51D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-596830D1,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-B2562571,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6C0CF80F,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-A18920BC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-5B28E5E0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-98B457F7,"Tokyo, JP -> Singapore, SG",0,1,1,0.7280483,1
+ORD-1B0AEC25,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-43F274B6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2ED20DEB,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-7EF9E932,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-FC4C3332,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-81347FC2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9418E548,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-FA5D2526,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-67DA771D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3625596C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1BE1F54B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-ADB08D87,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-DA6A8F58,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-49B9AEC0,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-AC862B70,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-F86E0AF5,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-4DA6180F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-7A7783D4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7609F8F0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2469663C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F443AC44,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-7B312B66,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-FDC1051A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-689D09DD,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-C2C618DC,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A3CAF84F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8CC46B51,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-9066AA0B,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-11D60A4A,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A0F6E753,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-9B9432F6,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-792F2A8F,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-3C542649,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7387A8D5,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-B3B0F790,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-16BCD090,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-B45B08EA,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-28E09197,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-51E5AB48,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-2385E8D6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-542A7533,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2C54DB57,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-8AF4C71B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8AE7EF74,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A343C547,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C918D88B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-354A4142,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-34992364,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-890882A0,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-925ED6A5,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A00FBB4B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2312068F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-848AADAF,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7E50193D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-4F5798D2,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-D7A77A6D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-DFD128FC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-80C1A547,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-1DA44E7D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-5D04EA95,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-9C04DFE3,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-83560149,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-56F29172,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-9E3C0F31,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-1D9EE191,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B8B06F20,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-C5777E01,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-CDD35AD1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-E500FCE6,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-6041C622,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-DC7E63E3,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-5D8EC90B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-CC4F0D46,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-EF4FBA00,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-0D7035E6,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0F1636A8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-9947A153,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7D622B06,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-6873D05D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-36F08049,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B551E2B5,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-EABFDFFC,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-91C370AA,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-498A61D9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-F9716CCC,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-E459DBEF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-6D5DE988,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-D12C03C6,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-49C935B7,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-145922A8,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-F43FB861,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-0AB6EC25,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-21E1FF69,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-0DAACB84,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.42114022,0
+ORD-0828E5DB,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-A8726221,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-6D82A9C0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-53AE81FB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-F78BF41D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-1756F77E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BB314434,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-C9C82543,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-029DD128,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-68CB2F0D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-9015174A,"Santos, BR -> Shanghai, CN",0,0,0,0.43887705,0
+ORD-39990E94,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D265EA83,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-CD9D8495,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-81386F8C,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-615C1844,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D7B8BC7A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-347A88A6,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2AE30512,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-D0B3E14A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-DBE0013E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-540595C5,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-ED191FB9,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-51858F3B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F3B11950,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-1BB96E54,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A71FEF51,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-EA74F7DF,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-A275C87A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-013C6D1D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-781C36F9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-6CCB31A2,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-204B3490,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F8AFF292,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-34AD8588,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-31129C0E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-662E0C41,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-91432D0A,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-1E851B5B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D3BF0DCE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-D8ED4D39,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-ADF43E60,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AA94FF16,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F12BE422,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-D46851ED,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-EA767746,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-663CFE5C,"Hamburg, DE -> New York, US",0,1,1,0.7280483,1
+ORD-C9EDDCD8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-6DDB13BD,"Shenzhen, CN -> Rotterdam, NL",0,1,1,0.7280483,1
+ORD-E72891E2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D0DE6EEF,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-06F92AF4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-960309AC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-DC9CEDED,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-D029B7D3,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-3C22A7B6,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A7A37104,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-9B8F6583,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-72E08F9A,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-6005CE2C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-AF36A0E4,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C110CB36,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-5CBCAA1A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-016DA7EC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-B1E69A9B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-92AB1150,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-6EAE1683,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A49CF274,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-22B8B0C6,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-63F95C54,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-104ED05F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-50FE44B4,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4B40AD64,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A64AED91,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A8B37B53,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-EF843833,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-3E83737E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-61EEE071,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-0523375B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-14CE0129,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-2E054430,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3C9668FD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-0BB93164,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-013F5851,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-2BF959F1,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-5BA869C4,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-D7A52B76,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-E58691EF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D29B963E,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-C1B3518C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-66B11B69,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6DCE8D7D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-02FD11C1,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-1C5F4998,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-5C6C1CBF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C7640232,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9FBE400F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-64C5829F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-FCD816A4,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BAABB068,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-392786D4,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-41E25017,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-4001E1CC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-996662C1,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-88FDC586,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BCB56019,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-1D142FC9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A327E468,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C269144B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-5D76DA83,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-763E84CA,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-DB961230,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-EF28E3E4,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-8116EE12,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6C8AFA75,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8BDBE47F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-6A1A20E1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-EB0BF6EE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-E556AB21,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-FF7824FD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-1494AAB5,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-E6B57A45,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-DA36CF93,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5C64D05C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-F1B55909,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-01BE9522,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-6A808A4B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-19615367,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-83F5E319,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-F5EAD06B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A254608D,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-52A0FB2E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-33F77AC3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-450EE44C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D21C0B9A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-925A31EB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-1F5EAD09,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-1599E65E,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-272D32FA,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-6F3DAE7C,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-F958666B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-95A2ED28,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-5F640DB3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8E7AE5F9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-42A237C7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B8D54071,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B1985B67,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4E457225,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-D5653426,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-B2F46FCB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.43887705,0
+ORD-160B6BB1,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-5D9BADC0,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-02C35BF7,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-44E62493,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-74B0BE77,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-70300A68,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-957428FB,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-85E4A365,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2D43D432,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-E6E4FD74,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-09402336,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4351C4C3,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-D941374E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7A11E65B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-830B2867,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-40B9402D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1D5E01EE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-766321CC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-568F47DD,"Tokyo, JP -> Singapore, SG",1,0,1,0.61020815,1
+ORD-2ECBD621,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-43D29C57,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-5E7DBB3D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-48D3A5E4,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-B68E8F99,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-34AE8E70,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B92C22EA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-AB361482,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-49BF8CAF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-6F337876,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-23A34A24,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-20329D9E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-7B055E53,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-0D8D9066,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-66A4F920,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-AA4DD5CD,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-16E84B29,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-D8025CEA,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-D45D7894,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-B1D35728,"Mumbai, IN -> Felixstowe, UK",0,1,1,0.7280483,1
+ORD-43B5BDB8,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-092C9A02,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3884EF97,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-081675B9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C8585BE9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-9C696111,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-80AB9976,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-F1A69ABD,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-59C71ED3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-3FAA85C2,"Shanghai, CN -> Los Angeles, US",0,0,0,0.43887705,0
+ORD-E56C49F5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-CF7BED96,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C5529B06,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-041BC983,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-49BC22A9,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-54902BA0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C1E58D62,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-7DC83539,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E2DD48D9,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-D7C11AA3,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-DB8E7E16,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8C844477,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-16697635,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-1CFADB96,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F1D58E8C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-1AA2A8BD,"Santos, BR -> Shanghai, CN",1,0,1,0.6658897,1
+ORD-BBFA9889,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0578B5E5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3C8C9FDB,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-16502DCE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7A41E707,"Shenzhen, CN -> Rotterdam, NL",0,1,1,0.7280483,1
+ORD-25235744,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3D62502F,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-74CB21B6,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7996EA9E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-B7583A08,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-D01E3C8D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A484D8F2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-CB6AF449,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-CB148DE2,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-F857D58F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-2E06F6FE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-609166CD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-FFFC8B47,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F1DDE20C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-30A6F889,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-F4BB3401,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-0D26A158,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-D52462D9,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-37590F2D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-61EC9A53,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B338E3DB,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-8A6386D2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-EDB4296C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-D6035D8A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-825CB867,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-2FF4F4F1,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-770ACE9C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9236C6DF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BA0917D7,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-771E579B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6D54434D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-88909D01,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-FB64CC7E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-1DC83FB9,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-FA22D9D8,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-97513273,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BFEDF282,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3811CDCB,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-AF99457C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-D5EA3C77,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-90C43ED1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B850FBC7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-ECF4C702,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-C8EEE3A4,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-16CBD441,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-6FFC71D5,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-82B53E7B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-FB2EDEAC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B9EAFFDB,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-724F873A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-924DA406,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-2184B774,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-3C2FDB48,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-793F09AC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-D06D9D64,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-E8B8231B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-75B934DA,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-D9560BA6,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-76D47BA7,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B5C0E291,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-1BE2C507,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9D646388,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-939B10AA,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-087ECE30,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-1AC75781,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-6552ED2E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-B9159EF2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-49416180,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-119C05A8,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-440ACBF6,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-409DBE16,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-B21D60F3,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-7DB39265,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-4206A2A0,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-ECDE684E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-3935A7B1,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-D3254CB3,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-3685B4EE,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-D724EAD6,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-24B1C93A,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-9B1D2E0E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E70FA177,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-D76A686C,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-CC8185D9,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-2393C2FC,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-21A624F8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-6F9DBE38,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-0774910C,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-A0DF1EA3,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-180EC8A2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-8468ED9B,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-2982DEF8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-2FFD3019,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-3DD01974,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1E2EC405,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2B83609F,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-644549C5,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-FD024080,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-911C9035,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-986AABC0,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-3EC09907,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-BDAB5012,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-E3EBB8B2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-0FA4C452,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-1FCE060B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-5617704F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2DCF9649,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-63ADC538,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-63739662,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-09DF18B2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F067867F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-88EE13CE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-87DD6E0D,"Santos, BR -> Shanghai, CN",0,0,0,0.43887705,0
+ORD-D0208F48,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-F8C03CB5,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-215354BC,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-A0AE6376,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-5C124F66,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-5A792623,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-395144F0,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-BA7447A3,"Santos, BR -> Shanghai, CN",0,1,1,0.7280483,1
+ORD-C47C53D1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-3A3D5087,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BA3E828A,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-EB67115F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-8F3AF874,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-DEC6A1D2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-71CD5F7A,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B21F71CF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-220D32D1,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0B284F78,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-A098C214,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A1DAE8B2,"Shanghai, CN -> Los Angeles, US",1,0,1,0.59613776,1
+ORD-CE943CD4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-5D041B59,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C06C8A8F,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-B25B82CF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4FED1F9E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-914F3775,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AB3F914F,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-C2675B9D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-94BE9B47,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-6639590A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-111E3EA3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-A2C2DDF1,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-81A33A3E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3282F887,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7E57EEB2,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-75CA6FE7,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A376A216,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-ACCCFDE8,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-F0748FEB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3FCE9516,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-03041382,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D53EA16B,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C55A1206,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-CBDE00FD,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-DEE7AA94,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-291BD756,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-911FF928,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-32B9163E,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-AF217940,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-645EEE77,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C1594076,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-D7D34F9C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4450EF00,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-CB8E9020,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8292D38D,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-8191B0CD,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BFE7D6B4,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-E1BDFA1C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-04DB02BE,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6E52C200,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-84FEB7FA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-FD8BD8EC,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-643C308B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B20F0215,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-C972D670,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A4DA5A2E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A1C40A7F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2C77E130,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-EE276C67,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-3DB21608,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E46BA9D3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-BF09353C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D6983732,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-3571AE53,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-5D07CCB4,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-1DB0A96F,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-E5235BC4,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-9BEAAD44,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-EDC70A82,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-D20FC1C5,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-589E3FCF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-35FA6BA8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-2564D4BF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5429075D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-43457DBD,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-43684EE3,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-BA967D9C,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-26B6B48B,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-127C29EB,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-64CFF798,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-4F32C191,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-4BB35488,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-9EAFFCD9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B2DEAB6A,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-B54D4B90,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-17A782FA,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-AF9EC2F1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7CC69E1D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AED63116,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-A84C3931,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-40CF1364,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-233A4873,"Shanghai, CN -> Los Angeles, US",0,1,1,0.7280483,1
+ORD-3067149E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-1D313A9F,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-6A6A6554,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-0FAF4A7B,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-8FB300F7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-93946863,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-7DD29D09,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A65A6EEF,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-AC2BE897,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A446B038,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-71D0C2BE,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-C46AB38A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-9B966DC9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-6F29598F,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-982F3F15,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-9C328D7D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-19868C08,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-26473D15,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-29B72530,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6DF6970E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D85F2FD4,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-5B156CBC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-600D9C4D,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-BB02303D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-81C5F1CB,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-0E043F3E,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-13D06F56,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-7C2A377D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-A070769E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-7889C930,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-04FE0B1D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-0882D6BE,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-FAB94510,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-114CB21D,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-0686D760,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-FB4D0DC0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-296A5FDD,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0982F7D4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-5A1D9919,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-CB961E0A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-63FC44E3,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-26650F9C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-239630C0,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D090318E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A700343E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-79619C32,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-9F61C716,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7B402895,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-496A2DAE,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-FE7860F2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-04D5432E,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-E6EA0070,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-46F92743,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-3F0869C9,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-4222190C,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-2762C0DC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4632165A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4EBEFF21,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D1C45B53,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0F77EEED,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C52567E8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-775B7452,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-4AA63951,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-1FC30BDA,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-040D252F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-6D528664,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-0681BD72,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-66B47D99,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-27159B10,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E02C24AB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-107EF706,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5057106A,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-2B5AE92D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3351A730,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-C267EC26,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-8BD6418D,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-57AB0FB5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-87A45FD9,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-544DF5BF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-EC76E84A,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-B6E13853,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-781F70CA,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-4EF7697E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3A253AB2,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-8AA22A08,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-8C462BCE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6DCF3F71,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8320E1B2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-2A799E37,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B29AD38E,"Tokyo, JP -> Singapore, SG",1,0,1,0.61020815,1
+ORD-470F1D9D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-9FE335B2,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-E68F87ED,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-03F41ABB,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-790A9B24,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F96FB239,"Hamburg, DE -> New York, US",0,1,1,0.7280483,1
+ORD-4D40CE9C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-480D39F8,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1670DCDF,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-127D18FE,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-F8773794,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B6BCBF22,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-A9C30E3D,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-5245B5E4,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-D33B0CA7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-4C5C3C37,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-8AFA5FD2,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-72530262,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-895FD23B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-94C7D6F0,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-39BBC4C0,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-FE188A6D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-57CAB1CD,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-0E547BCD,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-D253EAB8,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-55E4A825,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-677B0194,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-DE10B6D3,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-4C7340BF,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A2A6E884,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-AB74FEC1,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-16642377,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-59662BEE,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-D9BBC58B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-A07C001C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-4C98B227,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-2A12CFF8,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-65D4F57C,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-BE5471CA,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-A94C449B,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-066F5E5B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-C35A915A,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-6E3A1D5C,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-222C4941,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8D9726B1,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-DB00EA40,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-88D207B9,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-819FF093,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A19C3481,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-DA997AC9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-9A536B18,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-AFA08FB3,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-A6D8196E,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-56BA364D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3EA9634A,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-6F0ABEE0,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-2C7727D1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-9998C2DC,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-B10EACD7,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-59A5BB27,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-2D0FFDEF,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-103B952D,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-BEC615A2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-175B62C9,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5002D490,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-A8E68D61,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-F831ED11,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-E9517BF4,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-2F12D8A2,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-3276ECF9,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-49B4E044,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BAC12165,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-EFCC7040,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-77057541,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-3DD56BF2,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-45764D24,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-481B2D31,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-8C11188E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-B05B86AC,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-C49FD033,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-69BECACA,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-B9BBA008,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-AE66E30E,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-389603AE,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-3B2B9855,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-ABFFD2F8,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-C9A9CE1F,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-38250632,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-C36C01E9,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-4EDAF2E0,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-EB0DF64E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-83898799,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-5C071272,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-787F2040,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-95B14DDB,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-8D8ED89E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C6E8EC2F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-088C056E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.29232314,0
+ORD-AA11DCD7,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-D3FDD202,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-B2550BCB,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-3F5D8731,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-7C9B9B4C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-6C1D48B1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-3E770439,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-5E6E7681,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-C0503A27,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-63504D1C,"Shanghai, CN -> Los Angeles, US",1,1,1,0.7280483,1
+ORD-45C7E9D7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-E7830CBF,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6FDFAA71,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-475686D6,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-A982158D,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-102A07A2,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-50479B79,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-F170B129,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-93EFEA0E,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-8F22F03A,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-CE09F008,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-A08242E0,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-0BCFCB0A,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-C37269D6,"Hamburg, DE -> New York, US",0,0,0,0.30751678,0
+ORD-B6281A93,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-FFB600C0,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-C5B3A287,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-A76A1598,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-226DDE23,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-ACD94F38,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-3A02D1B7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-D356908E,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-B64A89CF,"Santos, BR -> Shanghai, CN",1,1,1,0.7280483,1
+ORD-35BA9EEC,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-F557AE1E,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-D56BED55,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-97564652,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-883B353A,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-B8BA0ECE,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-E68F737C,"Shanghai, CN -> Los Angeles, US",0,0,0,0.30751678,0
+ORD-B504F51B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-3CB9493D,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-68FADB0E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.29232314,0
+ORD-CD8B06C8,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-18A9ACDA,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-18AC9DB6,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-4510D689,"Santos, BR -> Shanghai, CN",0,0,0,0.30751678,0
+ORD-E2779A64,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-16AEE2CE,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-9FAC3704,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-65132F4C,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-C458103D,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-4E9CA80B,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-03A20AEE,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F231391E,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-708AEFD6,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-05A60AF8,"Shanghai, CN -> Los Angeles, US",1,0,1,0.59613776,1
+ORD-35D2412B,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-1380C4E9,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-90BA3552,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-1C4E3092,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-9FBECBE9,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-EE09810C,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.42114022,0
+ORD-4B1CDB5E,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-56F44DB8,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-0411A564,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-4291F748,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-66B72447,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-30A62357,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-22D94217,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-7996D258,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-959A4435,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-BBB1F586,"Hamburg, DE -> New York, US",1,1,1,0.7280483,1
+ORD-29D00CC9,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-DB4DD349,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-97170903,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-DC351B98,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-59B9EB21,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-48059A53,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-A5BBF120,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-CCC8CF41,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D49D45D3,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D20DD027,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-5127739A,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-4BF9695A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-3F651D52,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-08DFEDB1,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-D3F22931,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-5D4792FA,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-4043FF76,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-760B7373,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-49370080,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-F0F3D6E7,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-B8450392,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-05335E81,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-50629B69,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-CFF5BFF2,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-E19698B8,"Shenzhen, CN -> Rotterdam, NL",1,1,1,0.7280483,1
+ORD-703FDCBF,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-DB1BF74E,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-4115B67F,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-478F4A1F,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-2C4A27B8,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-5EA03642,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-EB44A81F,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-08B8BC92,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-8023FC50,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-8CE88C13,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-CEA758C7,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-C05245FE,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-7BCBFA8C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-8F90FB54,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D6D89B05,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-31C2E917,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-1677CFCE,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-A1BB7BD2,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-1B06D3AF,"Tokyo, JP -> Singapore, SG",1,0,1,0.61020815,1
+ORD-51346FD2,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-3B66F2BE,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-A4E7E36C,"Tokyo, JP -> Singapore, SG",0,0,0,0.3201756,0
+ORD-9D75A166,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-A137A3C1,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-0AF05114,"Santos, BR -> Shanghai, CN",0,0,0,0.27682653,0
+ORD-C2CD0169,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-F7B2C1BD,"Hamburg, DE -> New York, US",0,0,0,0.27682653,0
+ORD-65B4D6A7,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-577A6DE6,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
+ORD-51893DF1,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-BCEF952F,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-FA04CD75,"Tokyo, JP -> Singapore, SG",1,1,1,0.7280483,1
+ORD-86BCC9B9,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-D00E5E72,"Mumbai, IN -> Felixstowe, UK",1,1,1,0.7280483,1
+ORD-FED9A9A7,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27682653,0
+ORD-2694F305,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-5C09A0C5,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-6071E40C,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27682653,0
+ORD-C11D938B,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-FF805844,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-6720FF10,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27682653,0
+ORD-A603B53B,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-7B6C99FA,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-EC76E52A,"Mumbai, IN -> Felixstowe, UK",0,0,0,0.27320102,0
+ORD-A2A97218,"Shenzhen, CN -> Rotterdam, NL",0,0,0,0.27320102,0
+ORD-796BEEA4,"Santos, BR -> Shanghai, CN",0,0,0,0.27320102,0
+ORD-37E43ECB,"Tokyo, JP -> Singapore, SG",0,0,0,0.27682653,0
+ORD-C13394B6,"Tokyo, JP -> Singapore, SG",0,0,0,0.27320102,0
+ORD-C9936555,"Shanghai, CN -> Los Angeles, US",0,0,0,0.27320102,0
+ORD-F57B664C,"Hamburg, DE -> New York, US",0,0,0,0.27320102,0
